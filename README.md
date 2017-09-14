@@ -67,7 +67,6 @@ described in detail below.
 
 1. [Configure the Conversation API Credentials](#4-Configure-the-Conversation-API-Credentials)
 1. [Note the websocket URL](#5-note-the-websocket-url)
-
 1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
 
 1. [Create the notebook](#7-create-the-notebook)
@@ -85,9 +84,7 @@ described in detail below.
 
 
 
-## 1. Sign up for the Data Science Experience
-
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+## 1. Sign up for the Bluemix
 
 ## 2. Create Bluemix services
 
@@ -103,7 +100,7 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the `Browse available IBM Bluemix nodes` screen, click on `Next`
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
-  
+
 ## 3. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `orchestrate_dsx_workflow.json`
@@ -118,7 +115,10 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
 
 ![](doc/source/images/deploy_nodered_flow.png)
 
-## 4. Note the websocket URL
+
+## 4. Configure the Conversation API Credentials]
+
+## 5. Note the websocket URL
 
 ![](doc/source/images/note_websocket_url.png)
 
@@ -126,6 +126,23 @@ The websocket URL is ws://`<NODERED_BASE_URL>`/ws/orchestrate  where the `NODERE
 ### Note:
 An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/orchestrate` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
 The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
+
+## 6. Sign up for the Data Science Experience
+
+Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+
+## 7. Create the notebook
+
+Open IBM Data Science Experience. Use the menu on the top to select `Projects` and then `Default Project`.
+Click on `Add notebooks` (upper right) to create a notebook.
+
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
+* Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb
+* Click the `Create Notebook` button.
+
+![](doc/source/images/create_notebook_from_url.png)
 
 ## 5. Update the websocket URL in HTML code
 Click on the node named `HTML`.
@@ -140,20 +157,8 @@ Update the websocket URL with the base URL that was noted in the [Section 4](#4-
 
 Click on `Done` and re-deploy the flow.
 
-## 6. Create the notebook
 
-Open IBM Data Science Experience. Use the menu on the top to select `Projects` and then `Default Project`.
-Click on `Add notebooks` (upper right) to create a notebook.
-
-* Select the `From URL` tab.
-* Enter a name for the notebook.
-* Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb
-* Click the `Create Notebook` button.
-
-![](doc/source/images/create_notebook_from_url.png)
-
-## 7. Add the data 
+## 8. Add the data 
 
 #### Add the data to the notebook
 Use `Find and Add Data` (look for the `10/01` icon)
@@ -166,7 +171,7 @@ and its `Files` tab. From there you can click
 
 ![](doc/source/images/add_file.png)
 
-## 8. Update the notebook with service credentials
+## 9. Update the notebook with service credentials
 
 #### Add the Object Storage credentials to the notebook
 Select the cell below `2.1 Add your service credentials for Object Storage` section in the notebook to update
@@ -181,7 +186,7 @@ In the cell below `6. Expose integration point with a websocket client` , update
 
 ![](doc/source/images/update_websocket_url.png)
 
-## 9. Run the notebook
+## 10. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -202,4 +207,6 @@ There are several ways to execute the code cells in your notebook:
     can `Run All` cells in your notebook, or you can `Run All Below`, that will
     start executing from the first cell under the currently selected cell, and then
     continue executing all cells that follow.
+
+## 11. Results sent to the Node Red Flow
 
