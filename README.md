@@ -98,6 +98,8 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
+  * [**Conversation**](https://console.bluemix.net/catalog/services/conversation)
+
 ## 3. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `orchestrate_dsx_workflow.json`
