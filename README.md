@@ -65,23 +65,24 @@ described in detail below.
 
 1. [Import the Node-RED flow](#3-import-the-node-red-flow)
 
-1. [Configure the Conversation API Credentials](#4-Configure-the-Conversation-API-Credentials)
-1. [Note the websocket URL](#5-note-the-websocket-url)
-1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
+1. [Note the websocket URL](#4-note-the-websocket-url)
+1. [Sign up for the Data Science Experience](#5-sign-up-for-the-data-science-experience)
 
-1. [Create the notebook](#7-create-the-notebook)
+1. [Create the notebook](#6-create-the-notebook)
 
-1. [Add the data](#8-add-the-data)
+1. [Add the data](#7-add-the-data)
 
-1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
-1. [Run the notebook](#10-run-the-notebook)
+1. [Update the notebook with service credentials](#8-update-the-notebook-with-service-credentials)
+1. [Run the notebook](#9-run-the-notebook)
 
-1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
+1. [Results sent to the Node Red Flow](#10-results-sent-to-the-node-red-flow)
 
 
 
 
 ## 1. Sign up for the Bluemix
+
+Sign up for IBM's [Bluemix](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create Bluemix services
 
@@ -107,7 +108,7 @@ Create the following Bluemix service by following the link to use the Bluemix UI
 
 ## 3. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
-* Download the `orchestrate_dsx_workflow.json`
+* Download the `Robotic_AI_Agent_workflow.json`
 * Open the file with a text editor and copy the contents to Clipboard
 * On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents
 
@@ -115,12 +116,13 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  <br/>
  <br/>
  
+ #### Configure the Conversation API Credentials
+
+
  #### Deploy the Node-RED flow by clicking on the `Deploy` button
 
 ![](doc/source/images/deploy_nodered_flow.png)
 
-
-## 4. Configure the Conversation API Credentials
 
 ## 5. Note the websocket URL
 
