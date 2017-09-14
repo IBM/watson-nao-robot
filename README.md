@@ -7,12 +7,9 @@ When the reader has completed this journey, they will understand how to:
 
 * establish the communication between IOT devices like robot and other cloud applications
 * Develop a custom web user interface using Node-RED. 
-* Create the Watson Conversation chat bot Application
+* Create the Watson Conversation chat bot Application.
 * Do the statistical analysis on financial dataset.
-* Use DSX Object Storage to access data files.
-* Use Python Pandas to derive insights on the data.
-* 
-* Triggering an analytics workflow on DSX from the UI using Node-RED.
+
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
 
