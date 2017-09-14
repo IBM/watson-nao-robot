@@ -148,9 +148,10 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  <br/>
  
  #### Configure the Conversation API Credentials
-* By double click on the `conversation` node `Edit conversation node` prompt will open. While creating conversation 
-* Open the file with a text editor and copy the contents to Clipboard
-* On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents
+* By double click on the `conversation` node, `Edit conversation node` prompt will open.
+* While creating the conversation service we had note down the credantials for conversation service. Now capy and paste the Username, Password and Workspace ID at respective places.
+
+![](doc/source/images/conversation_service_credantial_update.png)
 
  #### Deploy the Node-RED flow by clicking on the `Deploy` button
 
