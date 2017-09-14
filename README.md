@@ -100,6 +100,11 @@ Create the following Bluemix service by following the link to use the Bluemix UI
 
   * [**Conversation**](https://console.bluemix.net/catalog/services/conversation)
 
+  ![](doc/source/images/bluemix_service_nodered.png)
+
+  * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
+  * On the same page, now Click on `Launch tool` to launch the Conversation Workspaces. Creation of conversation application is explained in the further step.
+
 ## 3. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `orchestrate_dsx_workflow.json`
@@ -115,7 +120,7 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
 ![](doc/source/images/deploy_nodered_flow.png)
 
 
-## 4. Configure the Conversation API Credentials]
+## 4. Configure the Conversation API Credentials
 
 ## 5. Note the websocket URL
 
