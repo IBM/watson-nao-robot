@@ -74,12 +74,9 @@ described in detail below.
 1. [Add the data](#8-add-the-data)
 
 1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
+1. [Run the notebook](#10-run-the-notebook)
 
-1. [Update the websocket URL](#10-update-the-websocket-url)
-
-1. [Run the notebook](#11-run-the-notebook)
-
-1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
+1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
 
 
 
@@ -143,19 +140,6 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Click the `Create Notebook` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
-
-## 5. Update the websocket URL in HTML code
-Click on the node named `HTML`.
-![](doc/source/images/html_node.png)
-
-Click on the HTML area and search for `ws:` to locate the line where the websocket URL is specified. 
-Update the websocket URL with the base URL that was noted in the [Section 4](#4-note-the-websocket-url): 	
-
-	var websocketURL = "ws://NODERED_BASE_URL/ws/orchestrate";
-	
-![](doc/source/images/update_html_websocket_url.png)
-
-Click on `Done` and re-deploy the flow.
 
 
 ## 8. Add the data 
