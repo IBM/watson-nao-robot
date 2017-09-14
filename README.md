@@ -162,9 +162,9 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
 
 ![](doc/source/images/note_websocket_url.png)
 
-The websocket URL is ws://`<NODERED_BASE_URL>`/ws/orchestrate  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
+The websocket URL is ws://`<NODERED_BASE_URL>`/ws/Robot_webpage  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
 ### Note:
-An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/orchestrate` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
+An example websocket URL for a Node-RED app with name `myApp` - `ws://cognitiverobot.mybluemix.net/ws/Robot_webpage` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
 The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
 
 ## 6. Sign up for the Data Science Experience
