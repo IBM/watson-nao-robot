@@ -128,9 +128,9 @@ workspace and select **View details**.
 *Optionally*, to view the conversation Intents, Entities, Dialogs select the workspace and choose the **Intents**, **Entities** and **Dialog** tab, here it is represented through snippets respectively:
 
 <p align="center">
-  <img width="400" height="650" src="doc/source/images/conversation_intents.png">
+  <img width="400" height="650" src="doc/source/images/conversation_intents.png" title="Intents">
 
-  <img width="400" height="650" src="doc/source/images/conversation_entities.png">
+  <img width="400" height="650" src="doc/source/images/conversation_entities.png" title="Entities">
 </p>
 
 
