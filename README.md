@@ -115,14 +115,13 @@ Launch the **Watson Conversation** tool. Use the **import** icon button on the r
   <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
-Find the local version of [`data/workspace.json`](data/workspace.json) and select
+Find the local version of [`conversation/workspace.json`] and select
 **Import**. Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**.
 
 <p align="center">
   <img width="400" height="250" src="doc/source/images/open_conversation_menu.png">
 </p>
-
 
 
 
