@@ -192,8 +192,7 @@ Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab. From there you can click
 `browse` and add data files from your computer.
 
-> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from WA_Retail-SalesMarketing_-ProfitCost.csv to Data.csv
-Please visit the site for the terms and conditions for usage of the data.
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from WA_Retail-SalesMarketing_-ProfitCost.csv to Data.csv before reading it in DSX. Please visit the site for the terms and conditions for usage of the data.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
