@@ -134,12 +134,7 @@ workspace and select **View details**.
 </p>
 
 
-
-![](doc/source/images/intents.png)
-
-![](doc/source/images/entities.png)
-
-![](doc/source/images/dialog.png)
+![](doc/source/images/conversation_dialog.png)
 
 
 ## 4. Import the Node-RED flow
