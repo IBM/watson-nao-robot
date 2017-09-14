@@ -47,5 +47,121 @@ described in detail below.
 9. [Run the notebook](#9-run-the-notebook)
 10.[Push the results back to websocket](#10-Push the results back to web socket)
 
-## 
+## 1. Sign up for the Data Science Experience
+
+Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+
+## 2. Create Bluemix services
+
+Create the following Bluemix service by following the link to use the Bluemix UI. Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
+
+  * [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+  
+  ![](doc/source/images/bluemix_service_nodered.png)
+  
+  * On the newly created Node-RED application page, Click on `Visit App URL` to launch the Node-RED editor once the application is in `Running` state.
+  * On the `Welcome to your new Node-RED instance on IBM Bluemix` screen, Click on `Next`
+  * On the `Secure your Node-RED editor` screen, enter a username and password to secure the Node-RED editor and click on `Next`
+  * On the `Browse available IBM Bluemix nodes` screen, click on `Next`
+  * On the `Finish the install` screen, click on Finish
+  * Click on `Go to your Node-RED flow editor`  
+  
+## 3. Import the Node-RED flow
+The flow json for Node-RED can be found under `node-red-flow` directory. 
+* Download the `orchestrate_dsx_workflow.json`
+* Open the file with a text editor and copy the contents to Clipboard
+* On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents
+
+ ![](doc/source/images/import_nodered_flow.png)
+ <br/>
+ <br/>
+ 
+ #### Deploy the Node-RED flow by clicking on the `Deploy` button
+
+![](doc/source/images/deploy_nodered_flow.png)
+
+## 4. Note the websocket URL
+
+![](doc/source/images/note_websocket_url.png)
+
+The websocket URL is ws://`<NODERED_BASE_URL>`/ws/orchestrate  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
+### Note:
+An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/orchestrate` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
+The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
+
+## 5. Update the websocket URL in HTML code
+Click on the node named `HTML`.
+![](doc/source/images/html_node.png)
+
+Click on the HTML area and search for `ws:` to locate the line where the websocket URL is specified. 
+Update the websocket URL with the base URL that was noted in the [Section 4](#4-note-the-websocket-url): 	
+
+	var websocketURL = "ws://NODERED_BASE_URL/ws/orchestrate";
+	
+![](doc/source/images/update_html_websocket_url.png)
+
+Click on `Done` and re-deploy the flow.
+
+## 6. Create the notebook
+
+Open IBM Data Science Experience. Use the menu on the top to select `Projects` and then `Default Project`.
+Click on `Add notebooks` (upper right) to create a notebook.
+
+* Select the `From URL` tab.
+* Enter a name for the notebook.
+* Optionally, enter a description for the notebook.
+* Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb
+* Click the `Create Notebook` button.
+
+![](doc/source/images/create_notebook_from_url.png)
+
+## 7. Add the data 
+
+#### Add the data to the notebook
+Use `Find and Add Data` (look for the `10/01` icon)
+and its `Files` tab. From there you can click
+`browse` and add data files from your computer.
+
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Please visit the site for the terms and conditions for usage of the data.
+
+
+
+![](doc/source/images/add_file.png)
+
+## 8. Update the notebook with service credentials
+
+#### Add the Object Storage credentials to the notebook
+Select the cell below `2.1 Add your service credentials for Object Storage` section in the notebook to update
+the credentials for Object Store. 
+
+Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert Crendentials` from drop down menu.
+
+![](doc/source/images/objectstorage_credentials.png)
+
+#### Update the websocket URL in the notebook
+In the cell below `6. Expose integration point with a websocket client` , update the websocket url noted in [section 4](#4-note-the-websocket-url) in the `start_websocket_listener` function.
+
+![](doc/source/images/update_websocket_url.png)
+
+## 9. Run the notebook
+
+When a notebook is executed, what is actually happening is that each code cell in
+the notebook is executed, in order, from top to bottom.
+
+Each code cell is selectable and is preceded by a tag in the left margin. The tag
+format is `In [x]:`. Depending on the state of the notebook, the `x` can be:
+
+* A blank, this indicates that the cell has never been executed.
+* A number, this number represents the relative order this code step was executed.
+* A `*`, this indicates that the cell is currently executing.
+
+There are several ways to execute the code cells in your notebook:
+
+* One cell at a time.
+  * Select the cell, and then press the `Play` button in the toolbar.
+* Batch mode, in sequential order.
+  * From the `Cell` menu bar, there are several options available. For example, you
+    can `Run All` cells in your notebook, or you can `Run All Below`, that will
+    start executing from the first cell under the currently selected cell, and then
+    continue executing all cells that follow.
 
