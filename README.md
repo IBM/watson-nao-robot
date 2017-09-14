@@ -5,10 +5,10 @@ This journey takes you through end to end flow of steps in building an interacti
 
 When the reader has completed this journey, they will understand how to:
 
-* establish the communication between IOT devices like robot and other cloud applications
+* Establish the communication between IOT devices like robot and other cloud applications
 * Develop a custom web user interface using Node-RED. 
 * Create the Watson Conversation chat bot Application.
-* Do the statistical analysis on financial dataset.
+* Do the statistical analysis on financial dataset using Jupitor (python) Notebook on Data Sacience Experience.
 
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
@@ -120,7 +120,7 @@ Find the local version of [`conversation/workspace.json`](conversation/workspace
 workspace and select **View details**.
 
 <p align="center">
-  <img width="400" height="250" src="doc/source/images/open_conversation_menu.png">
+  <img width="350" height="250" src="doc/source/images/open_conversation_menu.png">
 </p>
 
  Note down the Workspace ID for cinfiguring the conversation node in Node Red flow. Which is explained in further step.
@@ -194,9 +194,11 @@ and its `Files` tab. From there you can click
 
 > Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Please visit the site for the terms and conditions for usage of the data.
 
+<p align="center">
+  <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
+</p>
 
 
-![](doc/source/images/add_file.png)
 
 ## 9. Update the notebook with service credentials
 
