@@ -62,20 +62,20 @@ described in detail below.
 1. [Sign up for the Bluemix](#1-sign-up-for-the-Bluemix)
 
 1. [Create Bluemix services](#2-create-bluemix-services)
+1. [Create the Conversation Application](#3-create-the-conversation-application)
+1. [Import the Node-RED flow](#4-import-the-node-red-flow)
 
-1. [Import the Node-RED flow](#3-import-the-node-red-flow)
+1. [Note the websocket URL](#5-note-the-websocket-url)
+1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
 
-1. [Note the websocket URL](#4-note-the-websocket-url)
-1. [Sign up for the Data Science Experience](#5-sign-up-for-the-data-science-experience)
+1. [Create the notebook](#7-create-the-notebook)
 
-1. [Create the notebook](#6-create-the-notebook)
+1. [Add the data](#8-add-the-data)
 
-1. [Add the data](#7-add-the-data)
+1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
+1. [Run the notebook](#10-run-the-notebook)
 
-1. [Update the notebook with service credentials](#8-update-the-notebook-with-service-credentials)
-1. [Run the notebook](#9-run-the-notebook)
-
-1. [Results sent to the Node Red Flow](#10-results-sent-to-the-node-red-flow)
+1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
 
 
 
@@ -106,7 +106,9 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
   * On the same page, now Click on `Launch tool` to launch the Conversation Workspaces. Creation of conversation application is explained in the further step.
 
-## 3. Import the Node-RED flow
+## 3. Create the Conversation Application
+
+## 4. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `Robotic_AI_Agent_workflow.json`
 * Open the file with a text editor and copy the contents to Clipboard
@@ -117,7 +119,9 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  <br/>
  
  #### Configure the Conversation API Credentials
-
+* By double click on the `conversation` node `Edit conversation node` prompt will open. While creating conversation 
+* Open the file with a text editor and copy the contents to Clipboard
+* On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents
 
  #### Deploy the Node-RED flow by clicking on the `Deploy` button
 
