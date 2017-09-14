@@ -12,66 +12,40 @@ This journey takes you through end to end flow of steps in building an interacti
 3. The Node Red Flow uses the Watson Conversation API for handling the text and web socket for transferring the input and output between Node Red Flow and Jupyter notebook. 
 4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
 5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
-6. The financial data is stored in the Object storage.
+6. The data is stored in the Object storage.
 7. Data is utilized as csv files.
 8. The Jupyter notebook processes the data and generates insights.
 9. The Jypyter notebook is powered by Spark.
 
-## Included components
 
-* [Nao-Robot]
+## Included components
 
 * [Node-RED](https://console.bluemix.net/catalog/starters/node-red-starter): Node-RED is a programming tool for wiring together APIs and online services.
 
-* [Watson-Conversation-API](https://www.ibm.com/watson/services/conversation/?cm_sp=IBMCode-_-create-cognitive-retail-chatbot-_-included_components-_-watson-conversation): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
-
-* [IBM Data Science Experience](https://apsportal.ibm.com/analytics): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [Bluemix Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): A Bluemix service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market.
 
-* [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
-
 ## Featured technologies
 
-* [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
-
-
-# Watch the Video
-
-[![](http://img.youtube.com/vi/pic.jpg)](https://youtu.link)
-
+* [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 
 
 # Steps
 
-
-
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
+1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+2. [Create Bluemix services](#2-create-bluemix-services)
+3. [Import the Node-RED flow](#3-import-the-node-red-flow)
+4. [Note the websocket URL](#4-note-the-websocket-url)
+5. [Update the websocket URL](#5-update-the-websocket-url)
+6. [Create the notebook](#6-create-the-notebook)
+7. [Add the data](#7-add-the-data)
+8. [Update the notebook with service credentials](#8-update-the-notebook-with-service-credentials)
+9. [Run the notebook](#9-run-the-notebook)
+10.[Push the results back to websocket](#10-Push the results back to web socket)
 
-
-1. [Sign up for the Bluemix](#1-sign-up-for-the-Bluemix)
-
-1. [Create Bluemix services](#2-create-bluemix-services)
-
-1. [Import the Node-RED flow](#3-import-the-node-red-flow)
-
-1. [Configure the Conversation API Credentials](#4-Configure-the-Conversation-API-Credentials)
-1. [Note the websocket URL](#5-note-the-websocket-url)
-
-1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
-
-1. [Create the notebook](#7-create-the-notebook)
-
-1. [Add the data](#8-add-the-data)
-
-1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
-
-1. [Update the websocket URL](#10-update-the-websocket-url)
-
-1. [Run the notebook](#11-run-the-notebook)
-
-1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
-
+## 
 
