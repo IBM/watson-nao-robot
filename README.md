@@ -106,7 +106,26 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
   * On the same page, now Click on `Launch tool` to launch the Conversation Workspaces. Creation of conversation application is explained in the further step.
 
-## 3. Create the Conversation Application
+
+## 3. Configure Watson Conversation Application
+
+Launch the **Watson Conversation** tool. Use the **import** icon button on the right
+
+<p align="center">
+  <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
+</p>
+
+Find the local version of [`data/workspace.json`](data/workspace.json) and select
+**Import**. Find the **Workspace ID** by clicking on the context menu of the new
+workspace and select **View details**.
+
+<p align="center">
+  <img width="400" height="250" src="doc/source/images/open_conversation_menu.png">
+</p>
+
+
+
+
 
 ## 4. Import the Node-RED flow
 The flow json for Node-RED can be found under `node-red-flow` directory. 
