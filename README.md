@@ -123,7 +123,22 @@ workspace and select **View details**.
   <img width="400" height="250" src="doc/source/images/open_conversation_menu.png">
 </p>
 
+ Note down the Workspace ID for cinfiguring the conversation node in Node Red flow. Which is explained in further step.
 
+*Optionally*, to view the conversation Intents, Entities, Dialogs select the workspace and choose the **Intents**, **Entities** and **Dialog** tab, here it is represented through snippets respectively:
+
+<p align="center">
+  <img width="400" height="700" src="doc/source/images/intents.png">
+  <img width="400" height="700" src="doc/source/images/entities.png">
+</p>
+
+
+
+![](doc/source/images/intents.png)
+
+![](doc/source/images/entities.png)
+
+![](doc/source/images/dialog.png)
 
 
 ## 4. Import the Node-RED flow
