@@ -134,7 +134,7 @@ workspace and select **View details**.
 
 <p align="center">
   <img width="400" height="650" src="doc/source/images/conversation_intents.png" title="Intents">
-
+  <br />
   <img width="400" height="650" src="doc/source/images/conversation_entities.png" title="Entities">
 </p>
 
