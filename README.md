@@ -64,7 +64,7 @@ described in detail below.
 
 
 
-1. [Sign up for IBM's [Bluemix]](#1-sign-up-for-the-Bluemix)
+1. [Sign up for IBM's [Bluemix]](#1-sign-up-for-IBM's-[Bluemix])
 
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Create the Conversation Application](#3-create-the-conversation-application)
