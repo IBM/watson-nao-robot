@@ -1,11 +1,11 @@
 # Robotic Calculations and Inference Agent
 
 
-This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot and Watson Conversation API. Nao Robot listen the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained already. The conversation API through Node Red Flow further linked to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the finantial data set. The result of the query is now again sent back to Node Red Flow. Which is transfered to Nao Robo and it speaks the result.
+This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot and Watson Conversation API. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the finantial data set. The result of the query is now again sent back to Node Red Flow. Which is transfered to Nao Robo and it speaks the result.
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between IOT devices like robot and other cloud applications
+* Establish the communication between Robot and IoT devices.
 * Develop a custom web user interface using Node-RED. 
 * Create the Watson Conversation chat bot Application.
 * Do the statistical analysis on financial dataset using Jupitor (python) Notebook on Data Sacience Experience.
@@ -17,17 +17,17 @@ The intended audience for this journey are developers who want to develop a comp
 
 1. The user asks the specific questions to the Robot.
 2. Robot will convert the speech into text and it will send the text to Node Red Flow.
-3. The Node Red Flow uses the Watson Conversation API for handling the text and web socket for transferring the input and output between Node Red Flow and Jupyter notebook. 
+3. Node-RED flow sends the text from NAO robot to the Watson Conversation API. 
 4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
 5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
 6. The financial data is stored in the Object storage.
 7. Data is utilized as csv files.
-8. The Jupyter notebook processes the data and generates insights.
-9. The Jypyter notebook is powered by Spark.
+8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
+9. The Jupyter notebook is powered by Spark.
 
 ## Included components
 
-* [Nao-Robot](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao)
+* [Nao-Robot](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao): The fruit of a unique combination of mechanical engineering and software, NAO is a character made up of a multitude of sensors, motors and software piloted by a made-to-measure operating system: NAOqi OS.
 
 * [Node-RED](https://console.bluemix.net/catalog/starters/node-red-starter): Node-RED is a programming tool for wiring together APIs and online services.
 
@@ -154,7 +154,7 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  
  #### Configure the Conversation API Credentials
 * By double click on the `conversation` node, `Edit conversation node` prompt will open.
-* While creating the conversation service we had note down the credantials for conversation service. Now capy and paste the Username, Password and Workspace ID at respective places.
+* While creating the conversation service we have to note down the credantials for conversation service. The credeitials have to be copied and pasted in the Username, Password and Workspace ID respectively.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
@@ -216,7 +216,7 @@ Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You sho
 ![](doc/source/images/objectstorage_credentials.png)
 
 #### Update the websocket URL in the notebook
-In the cell below `6. Expose integration point with a websocket client` , update the websocket url noted in [section 4](#4-note-the-websocket-url) in the `start_websocket_listener` function.
+In the cell below `7. Expose integration point with a websocket client` , update the websocket url noted in [section 5](#5-note-the-websocket-url) in the `start_websocket_listener` function.
 
 ![](doc/source/images/update_websocket_url.png)
 
