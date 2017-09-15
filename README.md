@@ -70,7 +70,7 @@ described in detail below.
 
 ## 1. Sign up for IBM Bluemix
 
-[**Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
+Sign up for IBM [**Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create Bluemix services
 
