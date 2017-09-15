@@ -61,7 +61,7 @@ described in detail below.
 1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
 1. [Import the Node-RED flow](#4-import-the-node-red-flow)
 1. [Note the websocket URL](#5-note-the-websocket-url)
-1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
+1. [Sign up for the Data Science Experience](#6-sign-up-for-data-science-experience)
 1. [Create the notebook](#7-create-the-notebook)
 1. [Add the data](#8-add-the-data)
 1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
@@ -70,7 +70,7 @@ described in detail below.
 
 ## 1. Sign up for IBM's Bluemix
 
-[**Sign up for IBM's Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
+[**Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create Bluemix services
 
@@ -152,7 +152,7 @@ The NODERED_BASE_URL can have an additional region information say `eu-gb` for U
 
 ## 6. Sign up for Data Science Experience
 
-[Sign up for Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+[**Data Science Experience**](http://datascience.ibm.com/). By signing up for Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
 
 ## 7. Create the notebook
 
