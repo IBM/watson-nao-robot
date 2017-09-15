@@ -65,9 +65,8 @@ described in detail below.
 
 
 1. [Sign up for IBM's Bluemix](#1-sign-up-for-IBM's-Bluemix)
-
 1. [Create Bluemix services](#2-create-bluemix-services)
-1. [Create the Conversation Application](#3-create-the-conversation-application)
+1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
 1. [Import the Node-RED flow](#4-import-the-node-red-flow)
 
 1. [Note the websocket URL](#5-note-the-websocket-url)
