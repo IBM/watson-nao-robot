@@ -70,7 +70,7 @@ described in detail below.
 
 ## 1. Sign up for IBM's Bluemix
 
-Sign up for IBM's Bluemix(https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
+[**Sign up for IBM's Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create Bluemix services
 
@@ -150,9 +150,9 @@ The websocket URL is ws://`<NODERED_BASE_URL>`/ws/Robot_webpage  where the `NODE
 An example websocket URL for a Node-RED app with name `myApp` - `ws://cognitiverobot.mybluemix.net/ws/Robot_webpage` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
 The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
 
-## 6. Sign up for the Data Science Experience
+## 6. Sign up for Data Science Experience
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+[Sign up for Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
 
 ## 7. Create the notebook
 
