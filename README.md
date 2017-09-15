@@ -5,7 +5,7 @@ This journey takes you through end to end flow of steps in building an interacti
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between Robot and IoT devices.
+* Establish the communication between IoT devices like Robot ect.
 * Develop a custom web user interface using Node-RED. 
 * Create the Watson Conversation chat bot Application.
 * Do the statistical analysis on financial dataset using Jupitor (python) Notebook on Data Sacience Experience.
@@ -47,42 +47,26 @@ The intended audience for this journey are developers who want to develop a comp
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 * [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 
-
-
 # Watch the Video
 
 [![](http://img.youtube.com/vi/pic.jpg)](https://youtu.link)
 
-
-
 # Steps
-
-
 
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
-
-
 
 1. [Sign up for IBM's Bluemix](#1-sign-up-for-IBM's-Bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
 1. [Import the Node-RED flow](#4-import-the-node-red-flow)
-
 1. [Note the websocket URL](#5-note-the-websocket-url)
 1. [Sign up for the Data Science Experience](#6-sign-up-for-the-data-science-experience)
-
 1. [Create the notebook](#7-create-the-notebook)
-
 1. [Add the data](#8-add-the-data)
-
 1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#10-run-the-notebook)
-
 1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
-
-
-
 
 ## 1. Sign up for IBM's Bluemix
 
@@ -110,7 +94,6 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
   * On the same page, now Click on `Launch tool` to launch the Conversation Workspaces. 
 
-
 ## 3. Configure Watson Conversation Application
 
 Launch the **Watson Conversation** tool. Use the **import** icon button on the right
@@ -127,7 +110,7 @@ workspace and select **View details**.
   <img width="350" height="250" src="doc/source/images/open_conversation_menu.png">
 </p>
 
-*Optionally*, to view the conversation Intents, Entities, Dialogs select the workspace and choose the **Intents**, **Entities** and **Dialog** tab, here it is represented through snippets respectively:
+*Optionally*, to view the conversation Intents, Entities, Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
 
 <p align="center">
   <img width="400" height="650" src="doc/source/images/conversation_intents.png" title="Intents">
@@ -135,11 +118,10 @@ workspace and select **View details**.
   <img width="400" height="650" src="doc/source/images/conversation_entities.png" title="Entities">
 </p>
 
-
 ![](doc/source/images/conversation_dialog.png)
 
-
 ## 4. Import the Node-RED flow
+
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `Robotic_AI_Agent_workflow.json`
 * Open the file with a text editor and copy the contents to Clipboard
@@ -158,7 +140,6 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  #### Deploy the Node-RED flow by clicking on the `Deploy` button
 
 ![](doc/source/images/deploy_nodered_flow.png)
-
 
 ## 5. Note the websocket URL
 
@@ -186,7 +167,6 @@ Click on `Add notebooks` (upper right) to create a notebook.
 
 ![](doc/source/images/create_notebook_from_url.png)
 
-
 ## 8. Add the data 
 
 #### Add the data to the notebook
@@ -199,8 +179,6 @@ and its `Files` tab. From there you can click
 <p align="center">
   <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
 </p>
-
-
 
 ## 9. Update the notebook with service credentials
 
