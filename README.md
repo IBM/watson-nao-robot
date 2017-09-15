@@ -56,19 +56,19 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM's Bluemix](#1-sign-up-for-IBM's-Bluemix)
+1. [Sign up for IBM Bluemix](#1-sign-up-for-IBM-Bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
 1. [Import the Node-RED flow](#4-import-the-node-red-flow)
 1. [Note the websocket URL](#5-note-the-websocket-url)
-1. [Sign up for the Data Science Experience](#6-sign-up-for-data-science-experience)
+1. [Sign up for Data Science Experience](#6-sign-up-for-data-science-experience)
 1. [Create the notebook](#7-create-the-notebook)
 1. [Add the data](#8-add-the-data)
 1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#10-run-the-notebook)
 1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
 
-## 1. Sign up for IBM's Bluemix
+## 1. Sign up for IBM Bluemix
 
 [**Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
