@@ -1,14 +1,14 @@
 # Robotic Calculations and Inference Agent
 
 
-This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot and Watson Conversation API. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the finantial data set. The result of the query is now again sent back to Node Red Flow. Which is transfered to Nao Robo and it speaks the result.
+This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the data set. The result of the query is sent back to Node Red Flow through websocket which is sent to Nao Robo and it speaks the result.
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between IoT devices like Robot ect.
+* Establish the communication between Robot & IoT devices.
 * Develop a custom web user interface using Node-RED. 
 * Create the Watson Conversation chat bot Application.
-* Do the statistical analysis on financial dataset using Jupitor (python) Notebook on Data Sacience Experience.
+* Do the statistical analysis on dataset using Jupitor (python) Notebook on Data Sacience Experience.
 
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
@@ -20,7 +20,7 @@ The intended audience for this journey are developers who want to develop a comp
 3. Node-RED flow sends the text from NAO robot to the Watson Conversation API. 
 4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
 5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
-6. The financial data is stored in the Object storage.
+6. The dataset for analysis is stored in the Object storage.
 7. Data is utilized as csv files.
 8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
@@ -162,7 +162,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb
+* Enter this Notebook URL: (https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb)
 * Click the `Create Notebook` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
@@ -174,7 +174,7 @@ Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab. From there you can click
 `browse` and add data files from your computer.
 
-> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from "WA_Retail-SalesMarketing_-ProfitCost.csv" to "Data.csv" before reading it in DSX. Please visit the site for the terms and conditions for usage of the data.
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from (https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/). Change the file name from "WA_Retail-SalesMarketing_-ProfitCost.csv" to "Data.csv" before reading it in DSX. Please visit the site for the terms and conditions for usage of the data.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
