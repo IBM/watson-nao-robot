@@ -240,4 +240,3 @@ There are several ways to execute the code cells in your notebook:
     continue executing all cells that follow.
 
 ## 12. Results sent to the Node Red Flow
-
