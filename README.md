@@ -1,27 +1,28 @@
 # Robotic Calculations and Inference Agent
 
 
-This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the data set. The result of the query is sent back to Node Red Flow through websocket which is sent to Nao Robo and it speaks the result.
+There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
+
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience(DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Conversation API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between Robot & IoT devices.
-* Develop a custom web user interface using Node-RED. 
-* Create the Watson Conversation chat bot Application.
-* Do the statistical analysis on dataset using Jupitor (python) Notebook on Data Sacience Experience.
+* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Conversation.
+* Create the Watson Conversation chat bot application.
+* Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Data Science Experience.
 
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
 
 ![](doc/source/images/Robot_Architecture_Diagram.png)
 
-1. The user asks the specific questions to the Robot.
-2. Robot will convert the speech into text and it will send the text to Node-Red Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-Red flow.
-3. Node-RED flow sends the text from NAO robot to the Watson Conversation API. 
-4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
-5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
+1. The user asks the questions on the dataset to the NAO Robot.
+2. The NAO Robot will convert the speech to text, and will send the text to Node-RED Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-RED flow.
+3. Node-RED flow sends the converted text to the Watson Conversation API. 
+4. The Watson Conversation API takes the text input. The text is analyzed to determine the intent based on the training provided.
+5. The context and state of the conversation is saved to the Cloudant DB to track the conversation flow of the user.
 6. The dataset for analysis is stored in the Object storage.
-7. Data is utilized as csv files.
+7. Data file is taken as input in csv format.
 8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
 
@@ -56,7 +57,7 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM Bluemix](#1-sign-up-for-IBM-Bluemix)
+1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Configure and Manage the Watson Conversation Application](#3-Configure-and-manage-the-watson-conversation-application)
 1. [Import and Deploy the Node-RED flow](#4-import-and-deploy-the-node-rED-flow)
@@ -74,9 +75,11 @@ Sign up for IBM [**Bluemix**](https://console.bluemix.net/). By clicking on crea
 
 ## 2. Create Bluemix services
 
-Create the following Bluemix service by following the link to use the Bluemix UI. Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
+Create the Bluemix services by following the link to use the Bluemix UI. 
 
-  * [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+[**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+  
+  Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
   
   ![](doc/source/images/bluemix_service_nodered.png)
   
@@ -87,7 +90,9 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
-  * [**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+[**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+  
+  Choose an appropriate name for the Conversation Service - `App name:`. Click on `Create`.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
@@ -100,21 +105,22 @@ Create the following Bluemix service by following the link to use the Bluemix UI
 
 ## 3. Configure and Manage the Watson Conversation Application
 
-Launch the **Watson Conversation** tool. Use the **import** icon button on the right
+Launch the **Watson Conversation** tool. 
+ * Download the `workspace.json` file from conversation directory to local system
+ * Click on **import** icon button on the right and upload `workspace.json` from the local system
 
 <p align="center">
   <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
-Find the local version of [`conversation/workspace.json`](conversation/workspace.json) and select
-**Import**. Find the **Workspace ID** by clicking on the context menu of the new
+* Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-after clicking on the View details you will be able to note down the **workspace ID** for future use.
+* Click on the View details. Note down the **Workspace ID**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
