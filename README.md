@@ -91,12 +91,12 @@ Create the following Bluemix service by following the link to use the Bluemix UI
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
-  * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
+  * On the newly created Conversation Service page, Click on `Service credentials` then `View credential` and note down the credentials for future use.
 
   ![](doc/source/images/conversation_credantial_note_down.png)
 
 
-  * On the same page, now Click on `Manage` icon then `Launch tool` to launch the Conversation Workspaces. 
+  * On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
 
 ## 3. Configure Watson Conversation Application
 
@@ -114,7 +114,7 @@ workspace and select **View details**.
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-after clicking on the View details you will be able to notedown the **workspace ID** for future use.
+after clicking on the View details you will be able to note down the **workspace ID** for future use.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
