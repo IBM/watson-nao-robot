@@ -121,7 +121,7 @@ workspace and select **View details**.
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-* Click on the View details. Note down the **Workspace ID**, **Username** and **Password**.
+* Click on the View details. Note down the **Workspace ID**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
@@ -155,7 +155,7 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  
  #### Configure the Conversation API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
-* The **Workspace ID**, **Username** and **Password** that we noted in [Configure Watson Conversation Application]((#3-configure-watson-conversation-application) should be entered in the corresponding fields.
+* Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application]((#3-configure-watson-conversation-application).
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
