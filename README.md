@@ -1,27 +1,28 @@
 # Robotic Calculations and Inference Agent
 
 
-This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the data set. The result of the query is sent back to Node Red Flow through websocket which is sent to Nao Robo and it speaks the result.
+There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
+
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience(DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Conversation API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between Robot & IoT devices.
-* Develop a custom web user interface using Node-RED. 
-* Create the Watson Conversation chat bot Application.
-* Do the statistical analysis on dataset using Jupitor (python) Notebook on Data Sacience Experience.
+* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Conversation.
+* Create the Watson Conversation chat bot application.
+* Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Data Science Experience.
 
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
 
 ![](doc/source/images/Robot_Architecture_Diagram.png)
 
-1. The user asks the specific questions to the Robot.
-2. Robot will convert the speech into text and it will send the text to Node-Red Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-Red flow.
-3. Node-RED flow sends the text from NAO robot to the Watson Conversation API. 
-4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
-5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
+1. The user asks the questions on the dataset to the NAO Robot.
+2. The NAO Robot will convert the speech to text, and will send the text to Node-RED Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-RED flow.
+3. Node-RED flow sends the converted text to the Watson Conversation API. 
+4. The Watson Conversation API takes the text input. The text is analyzed to determine the intent based on the training provided.
+5. The context and state of the conversation is saved to the Cloudant DB to track the conversation flow of the user.
 6. The dataset for analysis is stored in the Object storage.
-7. Data is utilized as csv files.
+7. Data file is taken as input in csv format.
 8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
 
@@ -56,17 +57,18 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM Bluemix](#1-sign-up-for-IBM-Bluemix)
+1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
-1. [Configure and Manage the Watson Conversation Application](#3-Configure-and-manage-the-watson-conversation-application)
-1. [Import and Deploy the Node-RED flow](#4-import-and-deploy-the-node-rED-flow)
-1. [Note the websocket URL](#5-note-the-websocket-url)
-1. [Sign up for Data Science Experience](#6-sign-up-for-data-science-experience)
-1. [Create the notebook](#7-create-the-notebook)
-1. [Add the data](#8-add-the-data)
-1. [Update the notebook with service credentials](#9-update-the-notebook-with-service-credentials)
-1. [Run the notebook](#10-run-the-notebook)
-1. [Results sent to the Node Red Flow](#11-results-sent-to-the-node-red-flow)
+1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
+1. [View Conversation Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
+1. [Import the Node-RED flow](#5-import-the-node-red-flow)
+1. [Note the websocket URL](#6-note-the-websocket-url)
+1. [Sign up for Data Science Experience](#7-sign-up-for-data-science-experience)
+1. [Create the notebook](#8-create-the-notebook)
+1. [Add the data](#9-add-the-data)
+1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
+1. [Run the notebook](#11-run-the-notebook)
+1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
 
 ## 1. Sign up for IBM Bluemix
 
@@ -74,9 +76,11 @@ Sign up for IBM [**Bluemix**](https://console.bluemix.net/). By clicking on crea
 
 ## 2. Create Bluemix services
 
-Create the following Bluemix service by following the link to use the Bluemix UI. Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
+Create the Bluemix services by following the link to use the Bluemix UI. 
 
-  * [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+[**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+  
+  Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
   
   ![](doc/source/images/bluemix_service_nodered.png)
   
@@ -87,7 +91,9 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
-  * [**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+[**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+  
+  Choose an appropriate name for the Conversation Service - `App name:`. Click on `Create`.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
@@ -96,45 +102,44 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   ![](doc/source/images/conversation_credantial_note_down.png)
 
 
-  * On the same page, on the left side now click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
+  * On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
 
-## 3. Configure and Manage the Watson Conversation Application
+## 3. Configure Watson Conversation Application
 
-Launch the **Watson Conversation** tool. Use the **import** icon button on the right
+Launch the **Watson Conversation** tool. 
+ * Download the `workspace.json` file from conversation directory to local system
+ * Click on **import** icon button on the right and upload `workspace.json` from the local system
 
 <p align="center">
   <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
-Find the local version of [`conversation/workspace.json`](conversation/workspace.json) and select
-**Import**. Find the **Workspace ID** by clicking on the context menu of the new
+* Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-after clicking on the View details you will be able to note down the **workspace ID** for future use.
+* Click on the View details. Note down the **Workspace ID**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
-To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
+## 4. View Conversation Intents, Entities and Dialog
+To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab.
 
-<p align="center">
-  <img width="400" height="650" src="doc/source/images/conversation_agent_intents.png" title="Intents">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="400" height="650" src="doc/source/images/conversation_agent_entities.png" title="Entities">
-</p>
+**Intents**
+![](doc/source/images/conversation_intents.png)
 
+**Entities**
+![](doc/source/images/conversation_entities.png.png)
+
+**Dialog**
 ![](doc/source/images/conversation_dialog.png)
 
-Please note that while managing the `Entities`, click on `System entities' and `swiched on` two entities, named `@sys-date` and `@sys-number`. These are inbuilt entities. 
-
-![](doc/source/images/conversation_system_enities.png)
-
-## 4. Import and Deploy the Node-RED flow
+## 5. Import the Node-RED flow
 
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `Robotic_AI_Agent_workflow.json`
@@ -155,7 +160,7 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
 
 ![](doc/source/images/deploy_nodered_flow.png)
 
-## 5. Note the websocket URL
+## 6. Note the websocket URL
 
 ![](doc/source/images/note_websocket_url.png)
 
@@ -164,11 +169,11 @@ The websocket URL is ws://`<NODERED_BASE_URL>`/ws/Robot_webpage  where the `NODE
 An example websocket URL for a Node-RED app with name `myApp` - `ws://cognitiverobot.mybluemix.net/ws/Robot_webpage` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
 The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
 
-## 6. Sign up for Data Science Experience
+## 7. Sign up for Data Science Experience
 
 [**Data Science Experience**](http://datascience.ibm.com/). By signing up for Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
 
-## 7. Create the notebook
+## 8. Create the notebook
 
 Open IBM Data Science Experience. Use the menu on the top to select `Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
@@ -181,7 +186,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 
 ![](doc/source/images/create_notebook_from_url.png)
 
-## 8. Add the data 
+## 9. Add the data 
 
 #### Add the data to the notebook
 Use `Find and Add Data` (look for the `10/01` icon)
@@ -194,7 +199,7 @@ and its `Files` tab. From there you can click
   <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
 </p>
 
-## 9. Update the notebook with service credentials
+## 10. Update the notebook with service credentials
 
 #### Add the Object Storage credentials to the notebook
 Select the cell below `2.1 Add your service credentials for Object Storage` section in the notebook to update
@@ -209,7 +214,7 @@ In the cell below `7. Expose integration point with a websocket client` , update
 
 ![](doc/source/images/update_websocket_url.png)
 
-## 10. Run the notebook
+## 11. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -231,5 +236,5 @@ There are several ways to execute the code cells in your notebook:
     start executing from the first cell under the currently selected cell, and then
     continue executing all cells that follow.
 
-## 11. Results sent to the Node Red Flow
+## 12. Results sent to the Node Red Flow
 
