@@ -7,10 +7,9 @@ This journey demonstrates a scenario where the robot can answer queries on finan
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between Robot & IoT devices.
-* Develop a custom web user interface using Node-RED. 
-* Create the Watson Conversation chat bot Application.
-* Do the statistical analysis on dataset using Jupitor (python) Notebook on Data Sacience Experience.
+* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Conversation.
+* Create the Watson Conversation chat bot application.
+* Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Data Science Experience.
 
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
