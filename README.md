@@ -1,7 +1,8 @@
 # Robotic Calculations and Inference Agent
 
 
-This journey takes you through end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. Nao Robot listens to the vocal query and converts it into text and sends it to Node Red Flow. The Node Red Flow uses Watson Conversation API to break and map the text into intents and entities for which it has been trained. The conversation API is linked through Node Red Flow to a Jupyter Notebook in Data Science Experience(DSX). In this notebook statistical analysis is performed on the data set. The result of the query is sent back to Node Red Flow through websocket which is sent to Nao Robo and it speaks the result.
+There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience(DSX). We will take you through the end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
