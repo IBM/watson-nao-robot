@@ -107,7 +107,7 @@ Find the local version of [`conversation/workspace.json`](conversation/workspace
 workspace and select **View details**.
 
 <p align="center">
-  <img width="350" height="250" src="doc/source/images/open_conversation_menu.png">
+  <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
 after clicking on the View details you will be able to notedown the **workspace ID** for future use.
