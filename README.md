@@ -75,9 +75,10 @@ Sign up for IBM [**Bluemix**](https://console.bluemix.net/). By clicking on crea
 
 ## 2. Create Bluemix services
 
-Create the following Bluemix services by following the link to use the Bluemix UI. 
+Create the Bluemix services by following the link to use the Bluemix UI. 
 
   * [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+  
   Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
   
   ![](doc/source/images/bluemix_service_nodered.png)
@@ -90,6 +91,7 @@ Create the following Bluemix services by following the link to use the Bluemix U
   * Click on `Go to your Node-RED flow editor`  
 
   * [**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+  
   Choose an appropriate name for the Conversation Service - `App name:`. Click on `Create`.
 
   ![](doc/source/images/bluemix_service_conversation.png)
