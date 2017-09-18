@@ -155,7 +155,7 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  
  #### Configure the Conversation API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
-* Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application]((#3-configure-watson-conversation-application).
+* Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
