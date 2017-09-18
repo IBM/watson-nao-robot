@@ -121,7 +121,7 @@ workspace and select **View details**.
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-* Click on the View details. Note down the **Workspace ID**.
+* Click on the View details. Note down the **Workspace ID**, **Username** and **Password**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
@@ -131,12 +131,15 @@ workspace and select **View details**.
 To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab.
 
 **Intents**
+
 ![](doc/source/images/conversation_agent_intents.png)
 
 **Entities**
-![](doc/source/images/conversation_agent_entities.png.png)
+
+![](doc/source/images/conversation_agent_entities.png)
 
 **Dialog**
+
 ![](doc/source/images/conversation_dialog.png)
 
 ## 5. Import the Node-RED flow
@@ -151,8 +154,8 @@ The flow json for Node-RED can be found under `node-red-flow` directory.
  <br/>
  
  #### Configure the Conversation API Credentials
-* By double click on the `conversation` node, `Edit conversation node` prompt will open.
-* While creating the conversation service we have to note down the credantials for conversation service. The credeitials have to be copied and pasted in the Username, Password and Workspace ID respectively.
+* Double click on the `conversation` node. `Edit conversation node` prompt will open.
+* The **Workspace ID**, **Username** and **Password** that we noted in [Configure Watson Conversation Application]((#3-configure-watson-conversation-application) should be entered in the corresponding fields.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
