@@ -131,10 +131,10 @@ workspace and select **View details**.
 To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab.
 
 **Intents**
-![](doc/source/images/conversation_intents.png)
+![](doc/source/images/conversation_agent_intents.png)
 
 **Entities**
-![](doc/source/images/conversation_entities.png.png)
+![](doc/source/images/conversation_agent_entities.png.png)
 
 **Dialog**
 ![](doc/source/images/conversation_dialog.png)
