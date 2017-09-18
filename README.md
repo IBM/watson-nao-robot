@@ -110,6 +110,12 @@ workspace and select **View details**.
   <img width="350" height="250" src="doc/source/images/open_conversation_menu.png">
 </p>
 
+after clicking on the View details you will be able to notedown the **workspace ID** for future use.
+
+<p align="center">
+  <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
+</p>
+
 *Optionally*, to view the conversation Intents, Entities, Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
 
 <p align="center">
