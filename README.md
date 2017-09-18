@@ -87,12 +87,16 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
-  * [**Conversation**](https://console.bluemix.net/catalog/services/conversation)
+  * [**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
   * On the newly created Conversation Service page, Click on `Service credentials` and note down the credentials for future use.
-  * On the same page, now Click on `Launch tool` to launch the Conversation Workspaces. 
+
+  ![](doc/source/images/conversation_credantial_note_down.png)
+
+
+  * On the same page, now Click on `Manage` icon then `Launch tool` to launch the Conversation Workspaces. 
 
 ## 3. Configure Watson Conversation Application
 
@@ -116,7 +120,7 @@ after clicking on the View details you will be able to notedown the **workspace 
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
-*Optionally*, to view the conversation Intents, Entities, Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
+*Optionally*, to view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
 
 <p align="center">
   <img width="400" height="650" src="doc/source/images/conversation_intents.png" title="Intents">
