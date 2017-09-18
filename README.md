@@ -58,8 +58,8 @@ described in detail below.
 
 1. [Sign up for IBM Bluemix](#1-sign-up-for-IBM-Bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
-1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
-1. [Import the Node-RED flow](#4-import-the-node-red-flow)
+1. [Configure and Manage the Watson Conversation Application](#3-Configure-and-manage-the-watson-conversation-application)
+1. [Import and Deploy the Node-RED flow](#4-import-and-deploy-the-node-rED-flow)
 1. [Note the websocket URL](#5-note-the-websocket-url)
 1. [Sign up for Data Science Experience](#6-sign-up-for-data-science-experience)
 1. [Create the notebook](#7-create-the-notebook)
@@ -96,9 +96,9 @@ Create the following Bluemix service by following the link to use the Bluemix UI
   ![](doc/source/images/conversation_credantial_note_down.png)
 
 
-  * On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
+  * On the same page, on the left side now click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
 
-## 3. Configure Watson Conversation Application
+## 3. Configure and Manage the Watson Conversation Application
 
 Launch the **Watson Conversation** tool. Use the **import** icon button on the right
 
@@ -120,7 +120,7 @@ after clicking on the View details you will be able to note down the **workspace
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
-*Optionally*, to view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
+To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab, here it is represented through snippets respectively:
 
 <p align="center">
   <img width="400" height="650" src="doc/source/images/conversation_intents.png" title="Intents">
@@ -130,7 +130,11 @@ after clicking on the View details you will be able to note down the **workspace
 
 ![](doc/source/images/conversation_dialog.png)
 
-## 4. Import the Node-RED flow
+Please note that while managing the `Entities`, click on `System entities' and `swiched on` two entities, named `@sys-date` and `@sys-number`. These are inbuilt entities. 
+
+![](doc/source/images/conversation_system_enities.png)
+
+## 4. Import and Deploy the Node-RED flow
 
 The flow json for Node-RED can be found under `node-red-flow` directory. 
 * Download the `Robotic_AI_Agent_workflow.json`
