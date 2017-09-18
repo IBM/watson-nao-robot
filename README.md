@@ -2,6 +2,7 @@
 
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
+
 This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience(DSX). We will take you through the end to end flow of steps in building an interactive interface between NAO Robot, Watson Conversation API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
