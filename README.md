@@ -242,5 +242,6 @@ There are several ways to execute the code cells in your notebook:
 ## 12. Results sent to the Node Red Flow
    * The sample response for the question is given below.
 
-   User: What is the highest profit of Capri Italy in 2007?
-   NAO response: The highest profit of Capri Italy in 2007 is 310000.
+   **User**: What is the highest profit of Capri Italy in 2007?
+   
+   **NAO response**: The highest profit of Capri Italy in 2007 is 310000.
