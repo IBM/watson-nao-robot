@@ -57,7 +57,7 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM Bluemix](#1-sign-up-for-IBM-Bluemix)
+1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-Bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
 1. [Import the Node-RED flow](#4-import-the-node-red-flow)
