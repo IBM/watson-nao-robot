@@ -16,13 +16,13 @@ The intended audience for this journey are developers who want to develop a comp
 
 ![](doc/source/images/Robot_Architecture_Diagram.png)
 
-1. The user asks the specific questions to the Robot.
-2. Robot will convert the speech into text and it will send the text to Node-Red Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-Red flow.
-3. Node-RED flow sends the text from NAO robot to the Watson Conversation API. 
-4. The Watson Conversation API takes the text input in the form of natural language and breaks and maps it to intents and entities for which it has been trained for.
-5. The context of the conversation is saved to the Cloudant DB so that the Conversation API is able to save the state and track the conversation flow of the user.
+1. The user asks the questions on the dataset to the NAO Robot.
+2. The NAO Robot will convert the speech to text, and will send the text to Node-RED Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAV Robot through the Node-RED flow.
+3. Node-RED flow sends the converted text to the Watson Conversation API. 
+4. The Watson Conversation API takes the text input. The text is analyzed to determine the intent based on the training provided.
+5. The context and state of the conversation is saved to the Cloudant DB to track the conversation flow of the user.
 6. The dataset for analysis is stored in the Object storage.
-7. Data is utilized as csv files.
+7. Data file is taken as input in csv format.
 8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
 
