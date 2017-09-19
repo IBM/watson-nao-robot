@@ -148,7 +148,7 @@ In this conversation two system entities have been used namely `@sys-date` and `
 
 ![](doc/source/images/conversation_dialog_pic.png)
 
-In this conversation we have used the slots in the dialog for asserting multiple information from the user. Slots for `Max` dialog is represented in the above image. 
+In this conversation, the slots feature under dialog has been used to gather multiple informations from the user. Slots for `Max` dialog is represented in the above image. 
 
 ## 5. Import the Node-RED flow
 
