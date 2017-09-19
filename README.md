@@ -136,6 +136,8 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 **Entities**
 
+There are two kinds of the entities are available in the watson conversation. One is `My entities` and another one is `System entities`. Follwing is the My entities. 
+
 ![](doc/source/images/conversation_agent_entities.png)
 
 **Dialog**
