@@ -144,7 +144,7 @@ There are two types of the entities available under the Watson Conversation. One
 
 ![](doc/source/images/conversation_agent_entities.png)
 
-In this conversation two system entities have been used namely `@sys-date` and `sys-number`. User has to `switch on` the button before using it.
+In this conversation two system entities have been used namely `@sys-date` and `@sys-number`. User has to `switch on` the button before using it.
 
 ![](doc/source/images/conversation_system_enities.png)
 
