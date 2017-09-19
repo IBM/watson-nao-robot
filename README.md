@@ -136,9 +136,11 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 **Entities**
 
-There are two kinds of the entities are available in the watson conversation. One is `My entities` and another one is `System entities`. Follwing is the My entities. 
+There are two kinds of the entities are available in the watson conversation. One is `My entities` and another one is `System entities`. Following bellow are the My entities. 
 
 ![](doc/source/images/conversation_agent_entities.png)
+
+In this conversation two system entities have been used namely `@sys-date` and `sys-number`. User has to `switch on` the button before using it.
 
 **Dialog**
 
