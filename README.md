@@ -136,7 +136,11 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 **Entities**
 
+<<<<<<< HEAD
 There are two kinds of the entities are available in the watson conversation. One is `My entities` and another one is `System entities`. Following bellow are the My entities. 
+=======
+There are two types of the entities available under the Watson Conversation. One is `My entities` and another is `System entities`. Refer below for My Entities. 
+>>>>>>> e6b48e2c60e292123014921c390794fce0e09cb8
 
 ![](doc/source/images/conversation_agent_entities.png)
 
@@ -245,9 +249,9 @@ There are several ways to execute the code cells in your notebook:
 
 ## 12. Results sent to the Node Red Flow
    
-      The results from Data Science Experience are sent to Node-RED flow which is relayed to NAO Robot. 
-
-      The sample response for the question is given below.
+   The results from Data Science Experience are sent to Node-RED flow which is relayed to NAO Robot. 
+   
+   The sample response for the question is given below.
 
       **User**: What is the highest profit of Capri Italy in 2007?
    
