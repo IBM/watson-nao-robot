@@ -192,7 +192,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: (https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb)
+* Enter this Notebook URL: (https://github.com/IBM/watson-nao-robot/blob/master/notebooks/Robo_Notebook.ipynb/)
 * Click the `Create Notebook` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
