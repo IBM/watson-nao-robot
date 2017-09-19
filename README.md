@@ -140,7 +140,7 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 **Dialog**
 
-![](doc/source/images/conversation_dialog.png)
+![](doc/source/images/conversation_dialog_pic.png)
 
 ## 5. Import the Node-RED flow
 
