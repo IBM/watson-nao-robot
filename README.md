@@ -218,7 +218,7 @@ the credentials for Object Store.
 
 Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert Crendentials` from drop down menu.
 
-![](doc/source/images/robo_objectstorage_credentials.png)
+![](doc/source/images/robo_objectstorage_credentials.png) 
 
 #### Update the websocket URL in the notebook
 In the cell below `7. Expose integration point with a websocket client` , update the websocket url noted in [section 5](#5-note-the-websocket-url) in the `start_websocket_listener` function.
