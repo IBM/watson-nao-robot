@@ -42,7 +42,6 @@ The intended audience for this journey are developers who want to develop a comp
 
 ## Featured technologies
 
-* [IoT](https://developer.ibm.com/code/technologies/iot/): The inter-networking of large volumes of physical devices, enabling them to collect and exchange data.
 * [Data Science](https://developer.ibm.com/code/technologies/data-science/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 * [Analytics](https://developer.ibm.com/code/technologies/analytics/): Analytics delivers the value of data for the enterprise.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
