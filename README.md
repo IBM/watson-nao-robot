@@ -247,7 +247,7 @@ There are several ways to execute the code cells in your notebook:
     start executing from the first cell under the currently selected cell, and then
     continue executing all cells that follow.
 
-## 12. Results sent to the Node Red Flow
+## 12. Analyze Results
    
    The results from Data Science Experience are sent to Node-RED flow which is relayed to NAO Robot. 
    
