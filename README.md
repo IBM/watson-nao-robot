@@ -106,18 +106,19 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 ## 3. Configure Watson Conversation Application
 
 Launch the **Watson Conversation** tool. 
- * Download the `workspace.json` file from conversation directory to local system
- * Click on **import** icon button on the right and upload `workspace.json` from the local system
-
-<p align="center">
-  <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
-</p>
+* Download the `workspace.json` file from conversation directory to local system
 
 * Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**. Update the new workspace id in the workspace.json file before importing it.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
+</p>
+
+* Click on **import** icon button on the right and upload `workspace.json` from the local system
+
+<p align="center">
+  <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
 * Click on the View details. Note down the **Workspace ID**.
