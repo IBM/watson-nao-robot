@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="watsonnaorobot-3c1e6a">
+ <names>
+  <name lang="en_US">WatsonNaoRobot</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="WatsonSTT">
+   <nature>interactive</nature>
+   <names>
+    <name lang="en_US">WatsonSTT</name>
+   </names>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+</package>
