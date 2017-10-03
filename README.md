@@ -69,7 +69,7 @@ described in detail below.
 1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#11-run-the-notebook)
 1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
-1. [Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL](#13-update-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
+1. [Update the NAO Robot Choregraphe Behavior with service credentials and Node-RED URL](#13-update-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
 1. [Transfer the behaviour to NAO Robot](#14-transfer-the-behaviour-to-nao-robot)
 
 ## 1. Sign up for IBM Bluemix
@@ -92,6 +92,17 @@ Create the Bluemix services by following the link to use the Bluemix UI.
   * On the `Browse available IBM Bluemix nodes` screen, click on `Next`
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
+
+[**Watson Speech to Text Service**](https://console.bluemix.net/catalog/services/speech-to-text)
+  
+  Choose an appropriate name for the Speech to Text Service - `App name:`. Click on `Create`.
+
+  ![](doc/source/images/bluemix_service_stt.png)
+
+  * On the newly created Speech to Text Service page, Click on `Service credentials` then `View credential` and note down the credentials for future use.
+
+  ![](doc/source/images/watson_stt_service_credentials.png)
+
 
 [**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
   
@@ -260,6 +271,27 @@ There are several ways to execute the code cells in your notebook:
    
       **NAO response**: The highest profit of Capri Italy in 2007 is 310000.
 
-## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
+## 13. Update the NAO Robot Choregraphe Behavior with service credentials and Node-RED URL
+ 
+Open the NAO robot project (WatsonNaoRobot.pml) file under choregraphe/watson_nao_robot folder with the Choregraphe.
+Connect to the NAO robot using the `Connection/Connect` to menu from Choregrpahe.
 
-## 14. Transfer the behaviour to NAO Robot
+#### Update Watson Speech to Text credentials in the Behavior
+* Select the behavior.xar file in the project folder strcuture in the top left pane. 
+* Double click the `WatsonSTT Python Script` box in the choregraphe canvas pane. 
+* Update the Watson Speech to Text credentials in the `auth` variable in the Python code inside the `Python Script` box as shown below.
+![](doc/source/images/choregraphe_update_credentials.png) 
+
+#### Update Node-RED URL in the Behavior
+* Select the behavior.xar file in the project folder strcuture in the top left pane. 
+* Double click the `PostToNode-RED Python Script` box in the choregraphe canvas pane. 
+* Update the Node-RED URL in the `url` variable in the Python code inside the `Python Script` box as shown below.
+![](doc/source/images/choregraphe_update_node_red.png) 
+
+
+## 14. Transfer the behavior to NAO Robot
+
+Save the changes to the NAO robot project (WatsonNaoRobot.pml).
+
+* Select `Connection` from Choregraphe Menu and click `Upload to the robot and Play` sub menu to transfer behavior files to the NAO Robot and activate this journey code on the Robot.
+* Press the front tactile head sensor of the NAO robot and ask your question related to the dataset analysis and insights. 
