@@ -280,12 +280,14 @@ Connect to the NAO robot using the `Connection/Connect` to menu from Choregrpahe
 * Select the behavior.xar file in the project folder strcuture in the top left pane. 
 * Double click the `WatsonSTT Python Script` box in the choregraphe canvas pane. 
 * Update the Watson Speech to Text credentials in the `auth` variable in the Python code inside the `Python Script` box as shown below.
+
 ![](doc/source/images/choregraphe_update_credentials.png) 
 
 #### Update Node-RED URL in the Behavior
 * Select the behavior.xar file in the project folder strcuture in the top left pane. 
 * Double click the `PostToNode-RED Python Script` box in the choregraphe canvas pane. 
 * Update the Node-RED URL in the `url` variable in the Python code inside the `Python Script` box as shown below.
+
 ![](doc/source/images/choregraphe_update_node_red.png) 
 
 
@@ -295,3 +297,5 @@ Save the changes to the NAO robot project (WatsonNaoRobot.pml).
 
 * Select `Connection` from Choregraphe Menu and click `Upload to the robot and Play` sub menu to transfer behavior files to the NAO Robot and activate this journey code on the Robot.
 * Press the front tactile head sensor of the NAO robot and ask your question related to the dataset analysis and insights. 
+
+![](doc/source/images/choregraphe_transfer_behavior.png)
