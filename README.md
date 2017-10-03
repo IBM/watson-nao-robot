@@ -25,10 +25,11 @@ The intended audience for this journey are developers who want to develop a comp
 7. Data file is taken as input in csv format.
 8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
+10. The Node-RED flow sends the insights to NAO Robot.
 
 ## Included components
 
-* [Nao-Robot](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao): The fruit of a unique combination of mechanical engineering and software, NAO is a character made up of a multitude of sensors, motors and software piloted by a made-to-measure operating system: NAOqi OS.
+* [Nao-Robot Choregraphe Behaviour](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao): The fruit of a unique combination of mechanical engineering and software, NAO is a character made up of a multitude of sensors, motors and software piloted by a made-to-measure operating system: NAOqi OS.
 
 * [Node-RED](https://console.bluemix.net/catalog/starters/node-red-starter): Node-RED is a programming tool for wiring together APIs and online services.
 
@@ -68,6 +69,8 @@ described in detail below.
 1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#11-run-the-notebook)
 1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
+1. [Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL](#13-update-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
+1. [Transfer the behaviour to NAO Robot](#14-transfer-the-behaviour-to-nao-robot)
 
 ## 1. Sign up for IBM Bluemix
 
@@ -256,3 +259,7 @@ There are several ways to execute the code cells in your notebook:
       **User**: What is the highest profit of Capri Italy in 2007?
    
       **NAO response**: The highest profit of Capri Italy in 2007 is 310000.
+
+## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
+
+## 14. Transfer the behaviour to NAO Robot
