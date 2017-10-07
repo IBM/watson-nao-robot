@@ -50,7 +50,7 @@ The intended audience for this journey are developers who want to develop a comp
 
 # Watch the Video
 
-![](http://img.youtube.com/vi/G4Xz8OTe6Fc/0.jpg)(https://youtu.be/G4Xz8OTe6Fc)
+[![](http://img.youtube.com/vi/G4Xz8OTe6Fc.jpg)](https://youtu.be/G4Xz8OTe6Fc)
 
 # Steps
 
