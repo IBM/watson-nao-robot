@@ -299,3 +299,11 @@ Save the changes to the NAO robot project (WatsonNaoRobot.pml).
 * Press the front tactile head sensor of the NAO robot and ask your question related to the dataset analysis and insights. 
 
 ![](doc/source/images/choregraphe_transfer_behavior.png)
+
+# Troubleshooting
+
+[See DEBUGGING.md.](DEBUGGING.md)
+
+# License
+
+[Apache 2.0](LICENSE)
