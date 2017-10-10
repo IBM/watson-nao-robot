@@ -68,7 +68,7 @@ described in detail below.
 1. [Add the data](#9-add-the-data)
 1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
 1. [Run the notebook](#11-run-the-notebook)
-1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
+1. [Results sent to the Node Red Flow](#12-results-sent-to-node-red-flow)
 1. [Update the NAO Robot Choregraphe Behavior with service credentials and Node-RED URL](#13-update-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
 1. [Transfer the behaviour to NAO Robot](#14-transfer-the-behaviour-to-nao-robot)
 
@@ -261,7 +261,7 @@ There are several ways to execute the code cells in your notebook:
     start executing from the first cell under the currently selected cell, and then
     continue executing all cells that follow.
 
-## 12. Analyze Results
+## 12. Results Sent To Node-Red Flow
    
    The results from Data Science Experience are sent to Node-RED flow which is relayed to NAO Robot. 
    
