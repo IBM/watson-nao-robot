@@ -132,8 +132,8 @@ Launch the **Watson Conversation** tool.
 
 * click on "Watson Conversation" at the top to go back to workspace
 
-* Find the **Workspace ID** by clicking on the context menu of the new
-workspace and select **View details**. Update the new **Workspace ID** in the workspace.json file before importing it.
+* Find the **Workspace ID** by clicking on the context menu (three vertical dots) of the new
+workspace and select **View details**. 
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
