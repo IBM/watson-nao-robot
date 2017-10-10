@@ -168,6 +168,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
 * Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).`
+* Update the Node-RED URL (replace NODERED_BASE_URL with the correct URL) under path in the json file. 
 * Open the Robotic_AI_Agent_workflow.json file with a text editor and copy all the contents to Clipboard.
 * On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents from text editor.
 
