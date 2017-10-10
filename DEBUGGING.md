@@ -23,4 +23,4 @@ Node-RED
 Watson Conversation
 --------
 
-* Make sure that the Watson Conversation service credentials which had been noted down in step 2 and and Workspace ID which had been noted down in step 3, has been updated in the Watson Conversation node in Node Red Flow according to step 4. 
+* Make sure that the Watson Conversation service credentials which had been noted down in step 2 and and Workspace ID which had been noted down in step 3, has been updated in the Watson Conversation node in Node Red Flow according to step 5. 
