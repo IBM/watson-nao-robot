@@ -170,7 +170,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).`
 * Update the Node-RED URL (replace NODERED_BASE_URL with the correct URL) under path in the json file. 
 * Open the Robotic_AI_Agent_workflow.json file with a text editor and copy all the contents to Clipboard.
-* On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents from text editor.
+* On the Node-RED flow editor, click the Menu and select Import -> Clipboard and paste the contents from text editor & click import.
 
  ![](doc/source/images/import_nodered_flow.png)
  <br/>
@@ -179,6 +179,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
  #### Configure the Conversation API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
 * Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
+* Add username & password from Watson Conversation & click done.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
