@@ -120,7 +120,17 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 ## 3. Configure Watson Conversation Application
 
 Launch the **Watson Conversation** tool. 
-* Download the `workspace.json` file from conversation directory to local system
+* [Clone this repo](https://github.com/IBM/watson-nao-robot).
+
+* Navigate to [workspace.json](https://github.com/IBM/watson-nao-robot/blob/master/conversation/workspace.json).`
+
+* Update the workspace id in the workspace.json document under "workspace_id"
+
+* click on the "up arrow" to import a workspace & make sure "Everything" option is selected
+
+* click choose a file, navigate to workspace.json document and select import
+
+* click on "Watson Conversation" at the top to go back to workspace
 
 * Find the **Workspace ID** by clicking on the context menu of the new
 workspace and select **View details**. Update the new **Workspace ID** in the workspace.json file before importing it.
