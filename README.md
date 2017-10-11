@@ -110,12 +110,11 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
-  * On the newly created Conversation Service page, Click on `Service credentials` then `View credential` and note down the credentials for future use.
+* On the newly created Conversation Service page, Click on `Service credentials` then `View credential` and note down the credentials for future use.
 
   ![](doc/source/images/conversation_credantial_notedown.png)
 
-
-  * On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the Conversation Workspaces. 
+* On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the   Conversation Workspaces. 
 
 ## 3. Configure Watson Conversation Application
 
