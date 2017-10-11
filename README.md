@@ -153,13 +153,13 @@ workspace and select **View details**.
 ## 4. View Conversation Intents, Entities and Dialog
 To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab.
 
-**Intents**
+***Intents***
 
 Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Conversation service can choose the correct dialog flow for responding to it.
 
 ![](doc/source/images/conversation_agent_intents.png)
 
-**Entities**
+***Entities***
 
 Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Conversation service can choose the specific actions to take to fulfill an intent.
 
@@ -171,7 +171,7 @@ In this conversation two system entities have been used namely `@sys-date` and `
 
 ![](doc/source/images/conversation_system_enities.png)
 
-**Dialog**
+***Dialog***
 
 The dialog uses the intents and entities that are identified in the user's input, plus context from the application, to interact with the user and ultimately provide a useful response.
 
