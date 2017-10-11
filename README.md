@@ -126,16 +126,16 @@ Launch the **Watson Conversation** tool.
 
 * Update the workspace id in the workspace.json document under "workspace_id"
 
-* click on the "up arrow" to import a workspace & make sure "Everything" option is selected
+* Click on the "up arrow" to import a workspace & make sure "Everything" option is selected
 
 <p align="center">
   <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
 
-* click choose a file, navigate to workspace.json document and select import
+* Click choose a file, navigate to workspace.json document and select import
 
-* click on "Watson Conversation" at the top to go back to workspace
+* Click on "Watson Conversation" at the top to go back to workspace
 
 * Find the **Workspace ID** by clicking on the context menu (three vertical dots) of the new
 workspace and select **View details**. 
