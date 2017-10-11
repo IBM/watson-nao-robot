@@ -155,9 +155,13 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 **Intents**
 
+Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Conversation service can choose the correct dialog flow for responding to it.
+
 ![](doc/source/images/conversation_agent_intents.png)
 
 **Entities**
+
+Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Conversation service can choose the specific actions to take to fulfill an intent.
 
 There are two types of the entities available under the Watson Conversation. One is `My entities` and another is `System entities`. Refer below for My Entities. 
 
@@ -168,6 +172,8 @@ In this conversation two system entities have been used namely `@sys-date` and `
 ![](doc/source/images/conversation_system_enities.png)
 
 **Dialog**
+
+The dialog uses the intents and entities that are identified in the user's input, plus context from the application, to interact with the user and ultimately provide a useful response.
 
 ![](doc/source/images/conversation_dialog_pic.png)
 
@@ -180,6 +186,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Update the Node-RED URL (replace NODERED_BASE_URL with the correct URL) under path in the json file. 
 * Open the Robotic_AI_Agent_workflow.json file with a text editor and copy all the contents to Clipboard. 
 * On the Node-RED flow editor, click the Menu and select Import -> Clipboard, select new flow and paste the contents from text editor & click import.
+* Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them togeather to enable exchange of information.
 
  ![](doc/source/images/import_nodered_flow.png)
  <br/>
