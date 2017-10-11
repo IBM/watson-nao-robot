@@ -128,6 +128,11 @@ Launch the **Watson Conversation** tool.
 
 * click on the "up arrow" to import a workspace & make sure "Everything" option is selected
 
+<p align="center">
+  <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
+</p>
+
+
 * click choose a file, navigate to workspace.json document and select import
 
 * click on "Watson Conversation" at the top to go back to workspace
@@ -137,12 +142,6 @@ workspace and select **View details**.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
-</p>
-
-* Click on **import** icon button on the right and upload `workspace.json` from the local system
-
-<p align="center">
-  <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
 </p>
 
 * Click on the View details. Note down the **Workspace ID**.
