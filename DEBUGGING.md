@@ -18,7 +18,7 @@ Jupyter Notebooks
 Node-RED
 --------
 
-* Refer to sections 5 & 6 in the documentation regarding the usage of Node-RED flow.
+* Refer to sections 5 & 6 in the documentation regarding the usage of Node-RED flow. Please make sure to update the Node-RED based URL in the json file before importing it into the Node-RED editor.
 
 Watson Conversation
 --------
