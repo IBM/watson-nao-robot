@@ -187,6 +187,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Open the Robotic_AI_Agent_workflow.json file with a text editor and copy all the contents to Clipboard. 
 * On the Node-RED flow editor, click the Menu and select Import -> Clipboard, select new flow and paste the contents from text editor & click import.
 * Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them togeather to enable exchange of information.
+* Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
  ![](doc/source/images/import_nodered_flow.png)
  <br/>
