@@ -123,8 +123,6 @@ Launch the **Watson Conversation** tool.
 
 * Navigate to [workspace.json](https://github.com/IBM/watson-nao-robot/blob/master/conversation/workspace.json).`
 
-* Update the workspace id in the workspace.json document under "workspace_id"
-
 * Click on the "up arrow" to import a workspace & make sure "Everything" option is selected
 
 <p align="center">
