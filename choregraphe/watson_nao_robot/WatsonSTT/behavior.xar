@@ -338,6 +338,7 @@ class MyClass(GeneratedClass):
         url = 'https://stream.watsonplatform.net/speech-to-text/api/v1/recognize?model=en-US_BroadbandModel&inactivity_timeout=30&max_alternatives=1&word_confidence=false&timestamps=false&profanity_filter=true&smart_formatting=false&speaker_labels=false'
         with open("/home/nao/recordings/microphones/STT.wav", "rb") as audio_file:
             r=requests.post(url, auth=('SPEECH_TO_TEXT_USERNAME', 'SPEECH_TO_TEXT_PASSWORD'), headers=headers, data=audio_file)
+            r=requests.post(url, auth=('username', 'password'), headers=headers, data=audio_file)
             responses = r.json()
             if responses:
                 self.log(str(r.json()['results'][0]['alternatives'][0]['transcript']))

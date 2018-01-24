@@ -3,7 +3,7 @@
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience(DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Conversation API & Data Science Experience. 
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Conversation API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
@@ -121,9 +121,9 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 Launch the **Watson Conversation** tool. 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
 
-* Navigate to [workspace.json](https://github.com/IBM/watson-nao-robot/blob/master/conversation/workspace.json).`
+* Navigate to [workspace.json](https://github.com/IBM/watson-nao-robot/blob/master/conversation/workspace.json).
 
-* Click on the "up arrow" to import a workspace & make sure "Everything" option is selected
+* Click on the "up arrow" to import a workspace & make sure `Everything` option is selected.
 
 <p align="center">
   <img width="400" height="55" src="doc/source/images/import_conversation_workspace.png">
@@ -132,7 +132,7 @@ Launch the **Watson Conversation** tool.
 
 * Click choose a file, navigate to workspace.json document and select import
 
-* Click on "Watson Conversation" at the top to go back to workspace
+* Click on `Watson Conversation` at the top to go back to workspace
 
 * Find the **Workspace ID** by clicking on the context menu (three vertical dots) of the new
 workspace and select **View details**. 
@@ -160,7 +160,7 @@ Intents are purposes or goals expressed in a customer's input, such as answering
 
 Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Conversation service can choose the specific actions to take to fulfill an intent.
 
-There are two types of the entities available under the Watson Conversation. One is `My entities` and another is `System entities`. Refer below for My Entities. 
+There are two types of the entities available under the Watson Conversation. One is `My entities` and another is `System entities`. Refer below for `My Entities`. 
 
 ![](doc/source/images/conversation_agent_entities.png)
 
@@ -180,11 +180,11 @@ In this conversation, the slots feature under dialog has been used to gather mul
 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
 * Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).`
-* Open the NODERED_BASED_URL and click on "Go To Your Node-RED flow editor" to launch the Node-RED editor.
-* Update the Node-RED URL (replace NODERED_BASE_URL with the correct URL) under path in the json file. 
-* Open the Robotic_AI_Agent_workflow.json file with a text editor and copy all the contents to Clipboard. 
-* On the Node-RED flow editor, click the Menu and select Import -> Clipboard, select new flow and paste the contents from text editor & click import.
-* Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them togeather to enable exchange of information.
+* Open the `NODERED_BASED_URL` and click on `Go To Your Node-RED flow editor` to launch the Node-RED editor.
+* Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL) under path in the json file. 
+* Open the `Robotic_AI_Agent_workflow.json` file with a text editor and copy all the contents to Clipboard. 
+* On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click import.
+* Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
  ![](doc/source/images/import_nodered_flow.png)
@@ -194,7 +194,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
  #### Configure the Conversation API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
 * Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
-* Add username & password from Watson Conversation & click done.
+* Add username & password from Watson Conversation & click `Done`.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
@@ -206,10 +206,10 @@ In this conversation, the slots feature under dialog has been used to gather mul
 
 ![](doc/source/images/note_websocket_url.png)
 
-The websocket URL is ws://`<NODERED_BASE_URL>`/ws/Robot_webpage  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
+The websocket URL is `ws://`<NODERED_BASE_URL>`/ws/Robot_webpage`  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
 ### Note:
-An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/ws-robosocket` where `myApp.mybluemix.net` is the NODERED_BASE_URL. 
-The NODERED_BASE_URL can have an additional region information say `eu-gb` for UK region and NODERED_BASE_URL could be `myApp.eu-gb.mybluemix.net`. 
+An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/ws-robosocket` where `myApp.mybluemix.net` is the `NODERED_BASE_URL`. 
+The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for UK region and `NODERED_BASE_URL` could be `myApp.eu-gb.mybluemix.net`. 
 
 ## 7. Sign up for Data Science Experience
 
@@ -223,7 +223,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL : (https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb)
+* Enter this Notebook URL: (https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb)
 * Click the `Create Notebook` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
@@ -235,7 +235,7 @@ Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab. From there you can click
 `browse` and add data files from your computer.
 
-> Note: The data file in the `data` directory - `Data.csv` has been downloaded from (https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/). Change the file name from "WA_Retail-SalesMarketing_-ProfitCost.csv" to "Data.csv" before reading it in DSX. There are spaces in the column names which needs to be replaced with "_" before reading the file in DSX. Ex :- Product line has to be Product_line.
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from (https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/). Change the file name from `WA_Retail-SalesMarketing_-ProfitCost.csv` to `Data.csv` before reading it in DSX. There are spaces in the column names which needs to be replaced with "_" before reading the file in DSX. Ex :- Product line has to be Product_line.
 Please visit the site for the terms and conditions for usage of the data.
 
 <p align="center">
@@ -291,18 +291,18 @@ There are several ways to execute the code cells in your notebook:
 
 ## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
  
-Open the NAO robot project (WatsonNaoRobot.pml) file under choregraphe/watson_nao_robot folder with the Choregraphe.
-Connect to the NAO robot using the `Connection/Connect` to menu from Choregrpahe.
+Open the NAO robot project (WatsonNaoRobot.pml) file under `choregraphe/watson_nao_robot` folder with the Choregraphe.
+Connect to the NAO robot using the `Connection/Connect` to menu from Choregraphe.
 
 #### Update Watson Speech to Text credentials in the Behavior
-* Select the behavior.xar file in the project folder strcuture in the top left pane. 
+* Select the `behavior.xar` file in the project folder strcuture in the top left pane. 
 * Double click the `WatsonSTT Python Script` box in the choregraphe canvas pane. 
 * Update the Watson Speech to Text credentials in the `auth` variable in the Python code inside the `Python Script` box as shown below.
 
 ![](doc/source/images/choregraphe_update_credentials.png) 
 
 #### Update Node-RED URL in the Behaviour
-* Select the behavior.xar file in the project folder strcuture in the top left pane. 
+* Select the behavior.xar file in the project folder structure in the top left pane. 
 * Double click the `PostToNode-RED Python Script` box in the choregraphe canvas pane. 
 * Update the Node-RED URL in the `url` variable in the Python code inside the `Python Script` box as shown below.
 
