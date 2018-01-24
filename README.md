@@ -110,11 +110,11 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
-* On the newly created Conversation Service page, Click on `Service credentials` then `View credential` and note down the credentials for future use.
+* On the newly created Conversation Service page, click on `Service credentials` then `View credential` and note down the credentials for future use.
 
   ![](doc/source/images/conversation_credantial_notedown.png)
 
-* On the same page, on the left side now Click on `Manage` icon then on the right side click on `Launch tool` to launch the   Conversation Workspaces. 
+* On the same page, on the left side now click on `Manage` icon then on the right side click on `Launch tool` to launch the   Conversation Workspaces. 
 
 ## 3. Configure Watson Conversation Application
 
@@ -130,25 +130,25 @@ Launch the **Watson Conversation** tool.
 </p>
 
 
-* Click choose a file, navigate to workspace.json document and select import
+* Click to choose a file, navigate to `workspace.json` document and select `Import`
 
 * Click on `Watson Conversation` at the top to go back to workspace
 
-* Find the **Workspace ID** by clicking on the context menu (three vertical dots) of the new
-workspace and select **View details**. 
+* Find the `Workspace ID` by clicking on the context menu (three vertical dots) of the new
+workspace and select `View details`. 
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/open_conversation_details.png">
 </p>
 
-* Click on the View details. Note down the **Workspace ID**.
+* Click on the `View details`. Note down the `Workspace ID`.
 
 <p align="center">
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
 ## 4. View Conversation Intents, Entities and Dialog
-To view the conversation Intents, Entities and Dialog select the workspace and choose the **Intents** tab, **Entities** tab and **Dialog** tab.
+To view the conversation Intents, Entities and Dialog select the workspace and choose the `Intents` tab, `Entities` tab and `Dialog` tab.
 
 ***Intents***
 
@@ -179,11 +179,11 @@ In this conversation, the slots feature under dialog has been used to gather mul
 ## 5. Import the Node-RED flow
 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
-* Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).`
+* Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).
 * Open the `NODERED_BASED_URL` and click on `Go To Your Node-RED flow editor` to launch the Node-RED editor.
 * Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL) under path in the json file. 
 * Open the `Robotic_AI_Agent_workflow.json` file with a text editor and copy all the contents to Clipboard. 
-* On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click import.
+* On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click `Import`.
 * Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
@@ -193,7 +193,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
  
  #### Configure the Conversation API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
-* Enter the **Workspace ID** that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
+* Enter the `Workspace ID` that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
 * Add username & password from Watson Conversation & click `Done`.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
@@ -213,7 +213,7 @@ The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for
 
 ## 7. Sign up for Data Science Experience
 
-[**Data Science Experience**](http://datascience.ibm.com/). By signing up for Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+[**Data Science Experience**](https://datascience.ibm.com/). By signing up for Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
 
 ## 8. Create the notebook
 
@@ -223,7 +223,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: (https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb)
+* Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb
 * Click the `Create Notebook` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
@@ -235,7 +235,7 @@ Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab. From there you can click
 `browse` and add data files from your computer.
 
-> Note: The data file in the `data` directory - `Data.csv` has been downloaded from (https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/). Change the file name from `WA_Retail-SalesMarketing_-ProfitCost.csv` to `Data.csv` before reading it in DSX. There are spaces in the column names which needs to be replaced with "_" before reading the file in DSX. Ex :- Product line has to be Product_line.
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from `WA_Retail-SalesMarketing_-ProfitCost.csv` to `Data.csv` before reading it in DSX. There are spaces in the column names which needs to be replaced with "_" before reading the file in DSX. Ex :- Product line has to be Product_line.
 Please visit the site for the terms and conditions for usage of the data.
 
 <p align="center">
@@ -291,11 +291,11 @@ There are several ways to execute the code cells in your notebook:
 
 ## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
  
-Open the NAO robot project (WatsonNaoRobot.pml) file under `choregraphe/watson_nao_robot` folder with the Choregraphe.
+Open the NAO robot project (`WatsonNaoRobot.pml`) file under `choregraphe/watson_nao_robot` folder with the Choregraphe.
 Connect to the NAO robot using the `Connection/Connect` to menu from Choregraphe.
 
 #### Update Watson Speech to Text credentials in the Behavior
-* Select the `behavior.xar` file in the project folder strcuture in the top left pane. 
+* Select the `behavior.xar` file in the project folder structure in the top left pane. 
 * Double click the `WatsonSTT Python Script` box in the choregraphe canvas pane. 
 * Update the Watson Speech to Text credentials in the `auth` variable in the Python code inside the `Python Script` box as shown below.
 
