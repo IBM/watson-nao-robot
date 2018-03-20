@@ -60,7 +60,7 @@ described in detail below.
 1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
 1. [Configure Watson Assistant Application](#3-configure-watson-conversation-application)
-1. [View Assistant Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
+1. [View Watson Assistant Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
 1. [Sign up for Data Science Experience](#7-sign-up-for-data-science-experience)
@@ -74,7 +74,7 @@ described in detail below.
 
 ## 1. Sign up for IBM Bluemix
 
-Sign up for IBM [**Bluemix**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
+Sign up for IBM [**Cloud**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create Bluemix services
 
@@ -106,11 +106,11 @@ Create the Bluemix services by following the link to use the Bluemix UI.
 
 [**Watson Assistant Service**](https://console.bluemix.net/catalog/services/conversation)
   
-  Choose an appropriate name for the Assistant Service - `App name:`. Click on `Create`.
+  Choose an appropriate name for the Watson Assistant Service - `App name:`. Click on `Create`.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
-* On the newly created Assistant Service page, click on `Service credentials` then `View credential` and note down the credentials for future use.
+* On the newly created Watson Assistant Service page, click on `Service credentials` then `View credential` and note down the credentials for future use.
 
   ![](doc/source/images/conversation_credantial_notedown.png)
 
@@ -147,7 +147,7 @@ workspace and select `View details`.
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
-## 4. View Assistant Intents, Entities and Dialog
+## 4. View Watson Assistant Intents, Entities and Dialog
 To view the conversation Intents, Entities and Dialog select the workspace and choose the `Intents` tab, `Entities` tab and `Dialog` tab.
 
 ***Intents***
