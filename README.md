@@ -3,12 +3,12 @@
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Conversation service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Conversation API & Data Science Experience. 
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Assistant service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Conversation.
-* Create the Watson Conversation chat bot application.
+* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Assistant.
+* Create the Watson Assistant chat bot application.
 * Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Data Science Experience.
 
 
@@ -18,12 +18,12 @@ The intended audience for this journey are developers who want to develop a comp
 
 1. The user asks the questions on the dataset to the NAO Robot.
 2. The NAO Robot will convert the speech to text, and will send the text to Node-RED Flow for further processing on the cloud. The results from the processing on the cloud is returned to the NAO Robot through the Node-RED flow.
-3. Node-RED flow sends the converted text to the Watson Conversation API. 
-4. The Watson Conversation API takes the text input. The text is analyzed to determine the intent based on the training provided.
+3. Node-RED flow sends the converted text to the Watson Assistant API. 
+4. The Watson Assistant API takes the text input. The text is analyzed to determine the intent based on the training provided.
 5. The context and state of the conversation is saved to the Cloudant DB to track the conversation flow of the user.
 6. The dataset for analysis is stored in the Object storage.
 7. Data file is taken as input in csv format.
-8. The Jupyter notebook receives the Watson Conversation Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
+8. The Jupyter notebook receives the Watson Assistant Service API output from Node-RED using Web Sockets. The notebook processes the data based on the question and generates insights. The insights are sent back to the Node-RED flow using Web Socket.
 9. The Jupyter notebook is powered by Spark.
 10. The Node-RED flow sends the insights to NAO Robot.
 
@@ -33,7 +33,7 @@ The intended audience for this journey are developers who want to develop a comp
 
 * [Node-RED](https://console.bluemix.net/catalog/starters/node-red-starter): Node-RED is a programming tool for wiring together APIs and online services.
 
-* [Watson-Conversation-API](https://www.ibm.com/watson/services/conversation/?cm_sp=IBMCode-_-create-cognitive-retail-chatbot-_-included_components-_-watson-conversation): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
+* [Watson-Assistant-API](https://www.ibm.com/watson/services/conversation/?cm_sp=IBMCode-_-create-cognitive-retail-chatbot-_-included_components-_-watson-conversation): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
 
 * [IBM Data Science Experience](https://apsportal.ibm.com/analytics): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
@@ -59,8 +59,8 @@ described in detail below.
 
 1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
-1. [Configure Watson Conversation Application](#3-configure-watson-conversation-application)
-1. [View Conversation Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
+1. [Configure Watson Assistant Application](#3-configure-watson-conversation-application)
+1. [View Assistant Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
 1. [Sign up for Data Science Experience](#7-sign-up-for-data-science-experience)
@@ -104,21 +104,21 @@ Create the Bluemix services by following the link to use the Bluemix UI.
   ![](doc/source/images/watson_stt_service_credentials.png)
 
 
-[**Watson Conversation Service**](https://console.bluemix.net/catalog/services/conversation)
+[**Watson Assistant Service**](https://console.bluemix.net/catalog/services/conversation)
   
-  Choose an appropriate name for the Conversation Service - `App name:`. Click on `Create`.
+  Choose an appropriate name for the Assistant Service - `App name:`. Click on `Create`.
 
   ![](doc/source/images/bluemix_service_conversation.png)
 
-* On the newly created Conversation Service page, click on `Service credentials` then `View credential` and note down the credentials for future use.
+* On the newly created Assistant Service page, click on `Service credentials` then `View credential` and note down the credentials for future use.
 
   ![](doc/source/images/conversation_credantial_notedown.png)
 
-* On the same page, on the left side now click on `Manage` icon then on the right side click on `Launch tool` to launch the   Conversation Workspaces. 
+* On the same page, on the left side now click on `Manage` icon then on the right side click on `Launch tool` to launch the   Assistant Workspaces. 
 
-## 3. Configure Watson Conversation Application
+## 3. Configure Watson Assistant Application
 
-Launch the **Watson Conversation** tool. 
+Launch the **Watson Assistant** tool. 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
 
 * Navigate to [workspace.json](https://github.com/IBM/watson-nao-robot/blob/master/conversation/workspace.json).
@@ -132,7 +132,7 @@ Launch the **Watson Conversation** tool.
 
 * Click to choose a file, navigate to `workspace.json` document and select `Import`
 
-* Click on `Watson Conversation` at the top to go back to workspace
+* Click on `Watson Assistant` at the top to go back to workspace
 
 * Find the `Workspace ID` by clicking on the context menu (three vertical dots) of the new
 workspace and select `View details`. 
@@ -147,20 +147,20 @@ workspace and select `View details`.
   <img width="350" height="250" src="doc/source/images/conversation_workspace_id.png">
 </p>
 
-## 4. View Conversation Intents, Entities and Dialog
+## 4. View Assistant Intents, Entities and Dialog
 To view the conversation Intents, Entities and Dialog select the workspace and choose the `Intents` tab, `Entities` tab and `Dialog` tab.
 
 ***Intents***
 
-Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Conversation service can choose the correct dialog flow for responding to it.
+Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Assistant service can choose the correct dialog flow for responding to it.
 
 ![](doc/source/images/conversation_agent_intents.png)
 
 ***Entities***
 
-Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Conversation service can choose the specific actions to take to fulfill an intent.
+Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Assistant service can choose the specific actions to take to fulfill an intent.
 
-There are two types of the entities available under the Watson Conversation. One is `My entities` and another is `System entities`. Refer below for `My Entities`. 
+There are two types of the entities available under the Watson Assistant. One is `My entities` and another is `System entities`. Refer below for `My Entities`. 
 
 ![](doc/source/images/conversation_agent_entities.png)
 
@@ -184,17 +184,17 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL) under path in the json file. 
 * Open the `Robotic_AI_Agent_workflow.json` file with a text editor and copy all the contents to Clipboard. 
 * On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click `Import`.
-* Components of Node-RED flow includes a web socket server, Watson Conversation Service, Data Science Experience & user defined functions which tie them together to enable exchange of information.
+* Components of Node-RED flow includes a web socket server, Watson Assistant Service, Data Science Experience & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
  ![](doc/source/images/import_nodered_flow.png)
  <br/>
  <br/>
  
- #### Configure the Conversation API Credentials
+ #### Configure the Assistant API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
-* Enter the `Workspace ID` that we noted in [Configure Watson Conversation Application](#3-configure-watson-conversation-application).
-* Add username & password from Watson Conversation & click `Done`.
+* Enter the `Workspace ID` that we noted in [Configure Watson Assistant Application](#3-configure-watson-conversation-application).
+* Add username & password from Watson Assistant & click `Done`.
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
