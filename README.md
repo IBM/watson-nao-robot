@@ -3,7 +3,7 @@
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Assistant service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Data Science Experience. 
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Data Science Experience. 
 
 When the reader has completed this journey, they will understand how to:
 
@@ -152,13 +152,13 @@ To view the conversation Intents, Entities and Dialog select the workspace and c
 
 ***Intents***
 
-Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Assistant service can choose the correct dialog flow for responding to it.
+Intents are purposes or goals expressed in a customer's input, such as answering a question or processing a bill payment. By recognizing the intent expressed in a customer's input, the Watson Assistant service can choose the correct dialog flow for responding to it.
 
 ![](doc/source/images/conversation_agent_intents.png)
 
 ***Entities***
 
-Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Assistant service can choose the specific actions to take to fulfill an intent.
+Entities represent a class of object or a data type that is relevant to a user's purpose. By recognizing the entities that are mentioned in the user's input, the Watson Assistant service can choose the specific actions to take to fulfill an intent.
 
 There are two types of the entities available under the Watson Assistant. One is `My entities` and another is `System entities`. Refer below for `My Entities`. 
 
@@ -191,7 +191,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
  <br/>
  <br/>
  
- #### Configure the Assistant API Credentials
+ #### Configure the Watson Assistant API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
 * Enter the `Workspace ID` that we noted in [Configure Watson Assistant Application](#3-configure-watson-conversation-application).
 * Add username & password from Watson Assistant & click `Done`.
