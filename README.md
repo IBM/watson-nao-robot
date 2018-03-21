@@ -1,5 +1,6 @@
 # Robotic Calculations and Inference Agent
 
+> Watson Conversation is now Watson Assistant. Although some images in this code pattern may show the service as Watson Conversation, the steps and processes will still work.
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
@@ -59,8 +60,8 @@ described in detail below.
 
 1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
 1. [Create Bluemix services](#2-create-bluemix-services)
-1. [Configure Watson Assistant Application](#3-configure-watson-conversation-application)
-1. [View Watson Assistant Intents, Entities and Dialog](#4-view-conversation-intents-entities-and-dialog)
+1. [Configure Watson Assistant Application](#3-configure-watson-assistant-application)
+1. [View Watson Assistant Intents, Entities and Dialog](#4-view-assistant-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
 1. [Sign up for Data Science Experience](#7-sign-up-for-data-science-experience)
