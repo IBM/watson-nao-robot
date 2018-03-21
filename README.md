@@ -214,7 +214,7 @@ The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for
 
 ## 7. Sign up for Watson Studio
 
-[**Watson Studio**](https://datascience.ibm.com/). By signing up for Watson Studio, two services: ``Watson Studio-Spark`` and ``Watson Studio-ObjectStore`` will be created in your Bluemix account. Choose the storage type as Object Storage (Swift API) for this code pattern.
+[**Watson Studio**](https://datascience.ibm.com/). By signing up for Watson Studio, two services: ``Apache Spark`` and ``Object Storage`` will be created in your Bluemix account. Choose the storage type as Object Storage (Swift API) for this code pattern.
 
 ## 8. Create the notebook
 
