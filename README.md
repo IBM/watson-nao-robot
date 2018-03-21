@@ -214,18 +214,18 @@ The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for
 
 ## 7. Sign up for Watson Studio
 
-[**Watson Studio**](https://datascience.ibm.com/). By signing up for Watson Studio, two services: ``Apache Spark`` and ``Object Storage`` will be created in your Bluemix account. Choose the storage type as Object Storage (Swift API) for this code pattern.
+Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Choose the storage type as Object Storage (Swift API) for this code pattern.
 
 ## 8. Create the notebook
 
-Open IBM Watson Studio. Use the menu on the top to select `Projects` and then `Default Project`.
-Click on `Add notebooks` (upper right) to create a notebook.
-
+* Open [IBM Watson Studio](https://dataplatform.ibm.com).
+* Click on `Create notebook` to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
 * Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb
-* Click the `Create Notebook` button.
+* Select the free Anaconda runtime.
+* Click the `Create` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
 
