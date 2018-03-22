@@ -1,19 +1,20 @@
 # Robotic Calculations and Inference Agent
 
+> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
+
 > Watson Conversation is now Watson Assistant. Although some images in this code pattern may show the service as Watson Conversation, the steps and processes will still work.
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Data Science Experience (DSX). We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Data Science Experience. 
+This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Watson Studio. We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Watson Studio. 
 
 When the reader has completed this journey, they will understand how to:
 
-* Establish the communication between NAO Robot and IBM Data Science Experience with Watson Assistant.
+* Establish the communication between NAO Robot and IBM Watson Studio with Watson Assistant.
 * Create the Watson Assistant chat bot application.
-* Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Data Science Experience.
+* Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Watson Studio.
 
-
-The intended audience for this journey are developers who want to develop a complete analytics solution on DSX with a custom web user interface. 
+The intended audience for this journey are developers who want to develop a complete analytics solution on Watson Studio with a custom web user interface. 
 
 ![](doc/source/images/Robot_Architecture_Diagram.png)
 
@@ -36,7 +37,7 @@ The intended audience for this journey are developers who want to develop a comp
 
 * [Watson-Assistant-API](https://www.ibm.com/watson/services/conversation/?cm_sp=IBMCode-_-create-cognitive-retail-chatbot-_-included_components-_-watson-conversation): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
 
-* [IBM Data Science Experience](https://apsportal.ibm.com/analytics): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market. This code pattern uses Object Storage (Swift API).
 
@@ -58,13 +59,13 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
-1. [Create Bluemix services](#2-create-bluemix-services)
+1. [Sign up for IBM Cloud](#1-sign-up-for-ibm-cloud)
+1. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 1. [Configure Watson Assistant Application](#3-configure-watson-assistant-application)
 1. [View Watson Assistant Intents, Entities and Dialog](#4-view-assistant-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
-1. [Sign up for Data Science Experience](#7-sign-up-for-data-science-experience)
+1. [Sign up for Watson Studio](#7-sign-up-for-watson-studio)
 1. [Create the notebook](#8-create-the-notebook)
 1. [Add the data](#9-add-the-data)
 1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
@@ -73,13 +74,13 @@ described in detail below.
 1. [Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL](#13-update-the-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
 1. [Transfer the behaviour to NAO Robot](#14-transfer-the-behaviour-to-nao-robot)
 
-## 1. Sign up for IBM Bluemix
+## 1. Sign up for IBM Cloud
 
 Sign up for IBM [**Cloud**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
-## 2. Create Bluemix services
+## 2. Create IBM Cloud services
 
-Create the Bluemix services by following the link to use the Bluemix UI. 
+Create the IBM Cloud services by following the link to use the IBM Cloud UI. 
 
 [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
   
@@ -88,9 +89,9 @@ Create the Bluemix services by following the link to use the Bluemix UI.
   ![](doc/source/images/bluemix_service_nodered.png)
   
   * On the newly created Node-RED application page, Click on `Visit App URL` to launch the Node-RED editor once the application is in `Running` state.
-  * On the `Welcome to your new Node-RED instance on IBM Bluemix` screen, Click on `Next`
+  * On the `Welcome to your new Node-RED instance on IBM Cloud` screen, Click on `Next`
   * On the `Secure your Node-RED editor` screen, enter a username and password to secure the Node-RED editor and click on `Next`
-  * On the `Browse available IBM Bluemix nodes` screen, click on `Next`
+  * On the `Browse available IBM Cloud nodes` screen, click on `Next`
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
@@ -185,7 +186,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL) under path in the json file. 
 * Open the `Robotic_AI_Agent_workflow.json` file with a text editor and copy all the contents to Clipboard. 
 * On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click `Import`.
-* Components of Node-RED flow includes a web socket server, Watson Assistant Service, Data Science Experience & user defined functions which tie them together to enable exchange of information.
+* Components of Node-RED flow includes a web socket server, Watson Assistant Service, Watson Studio & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
  ![](doc/source/images/import_nodered_flow.png)
@@ -212,20 +213,20 @@ The websocket URL is `ws://`<NODERED_BASE_URL>`/ws/Robot_webpage`  where the `NO
 An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/ws-robosocket` where `myApp.mybluemix.net` is the `NODERED_BASE_URL`. 
 The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for UK region and `NODERED_BASE_URL` could be `myApp.eu-gb.mybluemix.net`. 
 
-## 7. Sign up for Data Science Experience
+## 7. Sign up for Watson Studio
 
-[**Data Science Experience**](https://datascience.ibm.com/). By signing up for Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account. Choose the storage type as Object Storage (Swift API) for this code pattern.
+Sign up for IBM's [Watson Studio](http://dataplatform.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Choose the storage type as Object Storage (Swift API) for this code pattern.
 
 ## 8. Create the notebook
 
-Open IBM Data Science Experience. Use the menu on the top to select `Projects` and then `Default Project`.
-Click on `Add notebooks` (upper right) to create a notebook.
-
+* Open [IBM Watson Studio](https://dataplatform.ibm.com).
+* Click on `Create notebook` to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
 * Enter this Notebook URL: https://github.com/IBM/watson-nao-robot/blob/master/Notebook/Robo_Notebook.ipynb
-* Click the `Create Notebook` button.
+* Select the free Anaconda runtime.
+* Click the `Create` button.
 
 ![](doc/source/images/create_notebook_from_url.png)
 
@@ -236,7 +237,7 @@ Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab. From there you can click
 `browse` and add data files from your computer.
 
-> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from `WA_Retail-SalesMarketing_-ProfitCost.csv` to `Data.csv` before reading it in DSX. There are spaces in the column names which needs to be replaced with "_" before reading the file in DSX. Ex :- Product line has to be Product_line.
+> Note: The data file in the `data` directory - `Data.csv` has been downloaded from https://www.ibm.com/communities/analytics/watson-analytics-blog/retail-sales-marketing-profit-cost/. Change the file name from `WA_Retail-SalesMarketing_-ProfitCost.csv` to `Data.csv` before reading it in Watson Studio. There are spaces in the column names which needs to be replaced with "_" before reading the file in Watson Studio. Ex :- Product line has to be Product_line.
 Please visit the site for the terms and conditions for usage of the data.
 
 <p align="center">
@@ -282,7 +283,7 @@ There are several ways to execute the code cells in your notebook:
 
 ## 12. Results Sent To The Node-Red Flow
    
-   The results from Data Science Experience are sent to Node-RED flow which is relayed to NAO Robot. 
+   The results from Watson Studio are sent to Node-RED flow which is relayed to NAO Robot. 
    
    The sample response for the question is given below.
 
