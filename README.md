@@ -6,15 +6,15 @@
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This journey demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Watson Studio. We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Watson Studio. 
+This code pattern demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Watson Studio. We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Watson Studio. 
 
-When the reader has completed this journey, they will understand how to:
+When the reader has completed this code pattern, they will understand how to:
 
 * Establish the communication between NAO Robot and IBM Watson Studio with Watson Assistant.
 * Create the Watson Assistant chat bot application.
 * Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Watson Studio.
 
-The intended audience for this journey are developers who want to develop a complete analytics solution on Watson Studio with a custom web user interface. 
+The intended audience for this code pattern are developers who want to develop a complete analytics solution on Watson Studio with a custom web user interface. 
 
 ![](doc/source/images/Robot_Architecture_Diagram.png)
 
@@ -56,7 +56,7 @@ The intended audience for this journey are developers who want to develop a comp
 
 # Steps
 
-Follow these steps to setup and run this developer journey. The steps are
+Follow these steps to setup and run this code pattern. The steps are
 described in detail below.
 
 1. [Sign up for IBM Cloud](#1-sign-up-for-ibm-cloud)
@@ -315,7 +315,7 @@ Connect to the NAO robot using the `Connection/Connect` to menu from Choregraphe
 
 Save the changes to the NAO robot project (WatsonNaoRobot.pml).
 
-* Select `Connection` from Choregraphe Menu and click `Upload to the robot and Play` sub menu to transfer behavior files to the NAO Robot and activate this journey code on the Robot.
+* Select `Connection` from Choregraphe Menu and click `Upload to the robot and Play` sub menu to transfer behavior files to the NAO Robot and activate this code on the Robot.
 * Press the front tactile head sensor of the NAO robot and ask your question related to the dataset analysis and insights. 
 
 ![](doc/source/images/choregraphe_transfer_behavior.png)
