@@ -1,5 +1,7 @@
 # Robotic Calculations and Inference Agent
 
+> Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
+
 > Watson Conversation is now Watson Assistant. Although some images in this code pattern may show the service as Watson Conversation, the steps and processes will still work.
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilties of the robot can be enhanced exponentially by integrating with cloud capabilities. 
@@ -11,7 +13,6 @@ When the reader has completed this journey, they will understand how to:
 * Establish the communication between NAO Robot and IBM Watson Studio with Watson Assistant.
 * Create the Watson Assistant chat bot application.
 * Perform statistical analysis on a financial dataset using Jupitor (Python) Notebook on IBM Watson Studio.
-
 
 The intended audience for this journey are developers who want to develop a complete analytics solution on Watson Studio with a custom web user interface. 
 
@@ -36,7 +37,7 @@ The intended audience for this journey are developers who want to develop a comp
 
 * [Watson-Assistant-API](https://www.ibm.com/watson/services/conversation/?cm_sp=IBMCode-_-create-cognitive-retail-chatbot-_-included_components-_-watson-conversation): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
 
-* [IBM Watson Studio](https://apsportal.ibm.com/analytics): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 * [IBM Cloud Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/?cm_sp=dw-bluemix-_-code-_-devcenter): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market. This code pattern uses Object Storage (Swift API).
 
@@ -58,13 +59,13 @@ The intended audience for this journey are developers who want to develop a comp
 Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
-1. [Sign up for IBM Bluemix](#1-sign-up-for-ibm-bluemix)
-1. [Create Bluemix services](#2-create-bluemix-services)
+1. [Sign up for IBM Cloud](#1-sign-up-for-ibm-cloud)
+1. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 1. [Configure Watson Assistant Application](#3-configure-watson-assistant-application)
 1. [View Watson Assistant Intents, Entities and Dialog](#4-view-assistant-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
-1. [Sign up for Watson Studio](#7-sign-up-for-data-science-experience)
+1. [Sign up for Watson Studio](#7-sign-up-for-watson-studio)
 1. [Create the notebook](#8-create-the-notebook)
 1. [Add the data](#9-add-the-data)
 1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
@@ -73,13 +74,13 @@ described in detail below.
 1. [Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL](#13-update-the-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
 1. [Transfer the behaviour to NAO Robot](#14-transfer-the-behaviour-to-nao-robot)
 
-## 1. Sign up for IBM Bluemix
+## 1. Sign up for IBM Cloud
 
 Sign up for IBM [**Cloud**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
 
-## 2. Create Bluemix services
+## 2. Create IBM Cloud services
 
-Create the Bluemix services by following the link to use the Bluemix UI. 
+Create the IBM Cloud services by following the link to use the IBM Cloud UI. 
 
 [**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
   
@@ -88,9 +89,9 @@ Create the Bluemix services by following the link to use the Bluemix UI.
   ![](doc/source/images/bluemix_service_nodered.png)
   
   * On the newly created Node-RED application page, Click on `Visit App URL` to launch the Node-RED editor once the application is in `Running` state.
-  * On the `Welcome to your new Node-RED instance on IBM Bluemix` screen, Click on `Next`
+  * On the `Welcome to your new Node-RED instance on IBM Cloud` screen, Click on `Next`
   * On the `Secure your Node-RED editor` screen, enter a username and password to secure the Node-RED editor and click on `Next`
-  * On the `Browse available IBM Bluemix nodes` screen, click on `Next`
+  * On the `Browse available IBM Cloud nodes` screen, click on `Next`
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
@@ -214,7 +215,7 @@ The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for
 
 ## 7. Sign up for Watson Studio
 
-Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Choose the storage type as Object Storage (Swift API) for this code pattern.
+Sign up for IBM's [Watson Studio](http://dataplatform.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Choose the storage type as Object Storage (Swift API) for this code pattern.
 
 ## 8. Create the notebook
 
