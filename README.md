@@ -244,15 +244,13 @@ Please visit the site for the terms and conditions for usage of the data.
   <img width="350" height="250" src="doc/source/images/add_file.png" title="Intents">
 </p>
 
-## 10. Update the notebook with service credentials
+## 10. Update the notebook to read the data as DataFrame
 
-#### Add the Object Storage credentials to the notebook
-Select the cell below `2.1 Add your service credentials for Object Storage` section in the notebook to update
-the credentials for Object Store. 
+Select the cell below `3. Read the Data & convert it into Dataframe` section in the notebook.
 
-Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert Crendentials` from drop down menu.
+Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert pandas DataFrame` from drop down menu.
 
-![](doc/source/images/robo_objectstorage_credentials.png) 
+![](doc/source/images/insert_dataframe.png) 
 
 #### Update the websocket URL in the notebook
 In the cell below `7. Expose integration point with a websocket client` , update the websocket url noted in [section 5](#5-note-the-websocket-url) in the `start_websocket_listener` function.
