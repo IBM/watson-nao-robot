@@ -246,7 +246,7 @@ Please visit the site for the terms and conditions for usage of the data.
 
 ## 10. Update the notebook to read the data as DataFrame
 
-Select the cell below `3. Read the Data & convert it into Dataframe` section in the notebook.
+Select the cell below `2. Read the Data & convert it into Dataframe` section in the notebook.
 
 Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert pandas DataFrame` from drop down menu.
 
