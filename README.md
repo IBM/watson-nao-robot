@@ -323,3 +323,11 @@ Save the changes to the NAO robot project (WatsonNaoRobot.pml).
 # License
 
 [Apache 2.0](LICENSE)
+
+# Usecases
+
+* Financial analysis 
+* Sales assist - provide recommendations to onfield sales agent for insurance domain 
+* Retail Sector - Inventory planning 
+* Manufacturing Sector - Monitoring the systems 
+* Concierge - Travel and Hospitality
