@@ -326,6 +326,8 @@ Save the changes to the NAO robot project (WatsonNaoRobot.pml).
 
 # Usecases
 
+> This pattern also `highlights the integration between Watson Assistant & Watson Studio` to enable exchange of information & process natural language. 
+
 * Financial analysis 
 * Sales assist - provide recommendations to onfield sales agent for insurance domain 
 * Retail Sector - Inventory planning 
