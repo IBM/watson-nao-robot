@@ -288,6 +288,8 @@ There are several ways to execute the code cells in your notebook:
       **NAO response**: The highest profit of Capri Italy in 2007 is 310000.
 
 ## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
+
+> Choregraphe works only with Python 2x. Please use Python 2x for Choregraphe service.
  
 Open the NAO robot project (`WatsonNaoRobot.pml`) file under `choregraphe/watson_nao_robot` folder with the Choregraphe.
 Connect to the NAO robot using the `Connection/Connect` to menu from Choregraphe.
