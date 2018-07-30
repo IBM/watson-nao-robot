@@ -179,15 +179,18 @@ In this conversation, the slots feature under dialog has been used to gather mul
 ## 5. Import the Node-RED flow
 
 * [Clone this repo](https://github.com/IBM/watson-nao-robot).
-* Navigate to [Robotic_AI_Agent_workflow.json](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow/Robotic_AI_Agent_workflow.json).
+* Navigate to [node-red-flow folder](https://github.com/IBM/watson-nao-robot/blob/master/node-red-flow).
 * Open the `NODERED_BASED_URL` and click on `Go To Your Node-RED flow editor` to launch the Node-RED editor.
-* Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL) under path in the json file. 
-* Open the `Robotic_AI_Agent_workflow.json` file with a text editor and copy all the contents to Clipboard. 
-* On the Node-RED flow editor, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click `Import`.
+* Import both Node-RED flows into the editor in two separate Node-RED instances.
+* Update the Node-RED URL (replace `NODERED_BASE_URL` with the correct URL in the first_flow.json) under path in the json file. 
+* Open the `first_flow.json` file with a text editor and copy all the contents to Clipboard in the first instance of Node-RED app. 
+* In the second instance of Node-RED app, open the `second_flow.json` file with a text editor and copy all the contents to Clipboard.
+* On the Node-RED flow editor for both flows, click the Menu and select `Import` -> `Clipboard`, select new flow and paste the contents from text editor & click `Import`.
 * Components of Node-RED flow includes a web socket server, Watson Assistant Service, Watson Studio & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
- ![](doc/source/images/import_nodered_flow.png)
+ ![](doc/source/images/first_flow.png)
+ ![](doc/source/images/second_flow.png)
  <br/>
  <br/>
  
@@ -198,17 +201,18 @@ In this conversation, the slots feature under dialog has been used to gather mul
 
 ![](doc/source/images/conversation_service_credantial_update.png)
 
- #### Deploy the Node-RED flow by clicking on the `Deploy` button
+ #### Deploy the Node-RED flows by clicking on the `Deploy` button
 
-![](doc/source/images/deploy_nodered_flow.png)
+![](doc/source/images/first_flow.png)
+![](doc/source/images/second_flow.png)
 
 ## 6. Note the websocket URL
 
-![](doc/source/images/note_websocket_url.png)
+![](doc/source/images/first_flow.png)
 
-The websocket URL is `ws://`<NODERED_BASE_URL>`/ws/Robot_webpage`  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
+The websocket URL is `ws://`<NODERED_BASE_URL>`/ws/orchestrate`  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
 ### Note:
-An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/ws-robosocket` where `myApp.mybluemix.net` is the `NODERED_BASE_URL`. 
+An example websocket URL for a Node-RED app with name `myApp` - `ws://myApp.mybluemix.net/ws/orchestrate` where `myApp.mybluemix.net` is the `NODERED_BASE_URL`. 
 The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for UK region and `NODERED_BASE_URL` could be `myApp.eu-gb.mybluemix.net`. 
 
 ## 7. Sign up for Watson Studio
