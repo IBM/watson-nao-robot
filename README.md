@@ -189,8 +189,7 @@ In this conversation, the slots feature under dialog has been used to gather mul
 * Components of Node-RED flow includes a web socket server, Watson Assistant Service, Watson Studio & user defined functions which tie them together to enable exchange of information.
 * Please review steps 1 to 10 under the Architecture diagram to understand the flow of events using Node-RED. 
 
- ![](doc/source/images/first_flow.png)
- ![](doc/source/images/second_flow.png)
+ ![](doc/source/images/import_nodered_flow.png)
  <br/>
  <br/>
  
@@ -203,12 +202,12 @@ In this conversation, the slots feature under dialog has been used to gather mul
 
  #### Deploy the Node-RED flows by clicking on the `Deploy` button
 
-![](doc/source/images/first_flow.png)
-![](doc/source/images/second_flow.png)
+![](https://github.com/IBM/watson-nao-robot/blob/master/doc/source/images/first_flow.PNG)
+![](https://github.com/IBM/watson-nao-robot/blob/master/doc/source/images/second_flow.png)
 
 ## 6. Note the websocket URL
 
-![](doc/source/images/first_flow.png)
+![](https://github.com/IBM/watson-nao-robot/blob/master/doc/source/images/first_flow.PNG)
 
 The websocket URL is `ws://`<NODERED_BASE_URL>`/ws/orchestrate`  where the `NODERED_BASE_URL` is the marked portion of the URL in the above image.
 ### Note:
@@ -283,13 +282,17 @@ There are several ways to execute the code cells in your notebook:
 
 ## 12. Results Sent To The Node-Red Flow
    
-   The results from Watson Studio are sent to Node-RED flow which is relayed to NAO Robot. 
+   The results from Watson Studio are sent to Node-RED based URL which is relayed to NAO Robot. The response time for the answer to the question is approximately 8 seconds. 
+   
+`Results`
+   
+![](https://github.com/IBM/watson-nao-robot/blob/master/doc/source/images/results.PNG) 
    
    The sample response for the question is given below.
 
       **User**: What is the highest profit of Capri Italy in 2007?
    
-      **NAO response**: The highest profit of Capri Italy in 2007 is 310000.
+      **NAO response**: The highest profit of Capri Italy in 2007 is 120000.
 
 ## 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
 
