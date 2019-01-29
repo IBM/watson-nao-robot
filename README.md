@@ -196,9 +196,22 @@ In this conversation, the slots feature under dialog has been used to gather mul
  #### Configure the Watson Assistant API Credentials
 * Double click on the `conversation` node. `Edit conversation node` prompt will open.
 * Enter the `Workspace ID` that we noted in [Configure Watson Assistant Application](#3-configure-watson-conversation-application).
-* Add username & password from Watson Assistant & click `Done`.
 
-![](doc/source/images/conversation_service_credantial_update.png)
+* If the service credentials from IBM Watson Assistant are username/password based as shown in the diagram below
+
+![](https://github.com/IBM/pattern-images/raw/master/watson-assistant/WatsonAssistantCredentials.png)
+
+Add username & password from Watson Assistant as shown below & click `Done`.
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/node-red/NodeREDAssistantCredentials.png)
+
+* If the service credentials from IBM Watson Assistant are IAM based as shown below in the diagram
+
+![](https://github.com/IBM/pattern-images/raw/master/watson-assistant/watson_assistant_api_key.png)
+
+Add the API KEY, Workspace ID as shown below and click `Done`
+
+![](https://raw.githubusercontent.com/IBM/pattern-images/master/node-red/NodeRedWatsonAssistantIAMCreds.png)`
 
  #### Deploy the Node-RED flows by clicking on the `Deploy` button
 
