@@ -352,7 +352,7 @@ This code pattern is licensed under the Apache Software License, Version 2.  Sep
 
 > This pattern also `highlights the integration between Watson Assistant & Watson Studio` to enable exchange of information & process natural language along with mining the data to generate insights. 
 
-* Financial analysis 
+* Financial analysis
 * Sales assist - provide recommendations to onfield sales agent for insurance domain 
 * Retail Sector - Inventory planning 
 * Manufacturing Sector - Monitoring the systems 
