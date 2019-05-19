@@ -60,7 +60,7 @@ described in detail below.
 1. [Sign up for IBM Cloud](#1-sign-up-for-ibm-cloud)
 1. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 1. [Configure Watson Assistant Application](#3-configure-watson-assistant-application)
-1. [View Watson Assistant Intents, Entities and Dialog](#4-view-assistant-intents-entities-and-dialog)
+1. [View Watson Assistant Intents, Entities and Dialog](#4-view-watson-assistant-intents-entities-and-dialog)
 1. [Import the Node-RED flow](#5-import-the-node-red-flow)
 1. [Note the websocket URL](#6-note-the-websocket-url)
 1. [Sign up for Watson Studio](#7-sign-up-for-watson-studio)
