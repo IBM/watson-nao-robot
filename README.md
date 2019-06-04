@@ -6,7 +6,7 @@
 
 There is a technological revolution taking place in the service industry with the introduction of Robots. The Robots are powered by artifical intelligence and are able to perform the roles of a waiter, customer relationship executive, cognitive assistant etc. The capabilities of the robot can be enhanced exponentially by integrating with cloud capabilities. 
 
-This code pattern demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Watson Studio. We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.ald.softbankrobotics.com/en/robots/nao/find-out-more-about-nao) Robot, Watson Assistant API & Watson Studio. 
+This code pattern demonstrates a scenario where the robot can answer queries on financial data by integrating with IBM Watson Assistant service and IBM Watson Studio. We will take you through the end to end flow of steps in building an interactive interface between [NAO](https://www.softbankrobotics.com/emea/en/nao) Robot, Watson Assistant API & Watson Studio. 
 
 When the reader has completed this code pattern, they will understand how to:
 
