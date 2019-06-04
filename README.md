@@ -66,7 +66,7 @@ described in detail below.
 1. [Sign up for Watson Studio](#7-sign-up-for-watson-studio)
 1. [Create the notebook](#8-create-the-notebook)
 1. [Add the data](#9-add-the-data)
-1. [Update the notebook with service credentials](#10-update-the-notebook-with-service-credentials)
+1. [Update the notebook with service credentials](#10-update-the-notebook-to-read-the-data-as-dataframe)
 1. [Run the notebook](#11-run-the-notebook)
 1. [Results sent to the Node Red Flow](#12-results-sent-to-the-node-red-flow)
 1. [Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL](#13-update-the-nao-robot-choregraphe-behaviour-with-service-credentials-and-node-red-url)
@@ -74,13 +74,13 @@ described in detail below.
 
 ## 1. Sign up for IBM Cloud
 
-Sign up for IBM [**Cloud**](https://console.bluemix.net/). By clicking on create a free account you will get 30 days trial account.
+Sign up for IBM [**Cloud**](https://cloud.ibm.com/login). By clicking on create a free account you will get 30 days trial account.
 
 ## 2. Create IBM Cloud services
 
 Create the IBM Cloud services by following the link to use the IBM Cloud UI. 
 
-[**Node-RED Starter**](https://console.bluemix.net/catalog/starters/node-red-starter)
+[**Node-RED Starter**](https://cloud.ibm.com/catalog/starters/node-red-starter)
   
   Choose an appropriate name for the Node-RED application - `App name:`. Click on `Create`.
   
@@ -93,7 +93,7 @@ Create the IBM Cloud services by following the link to use the IBM Cloud UI.
   * On the `Finish the install` screen, click on Finish
   * Click on `Go to your Node-RED flow editor`  
 
-[**Watson Speech to Text Service**](https://console.bluemix.net/catalog/services/speech-to-text)
+[**Watson Speech to Text Service**](https://cloud.ibm.com/catalog/services/speech-to-text)
   
   Choose an appropriate name for the Speech to Text Service - `App name:`. Click on `Create`.
 
@@ -104,7 +104,7 @@ Create the IBM Cloud services by following the link to use the IBM Cloud UI.
   ![](doc/source/images/watson_stt_service_credentials.png)
 
 
-[**Watson Assistant Service**](https://console.bluemix.net/catalog/services/conversation)
+[**Watson Assistant Service**](https://cloud.ibm.com/catalog/services/conversation)
   
   Choose an appropriate name for the Watson Assistant Service - `App name:`. Click on `Create`.
 
@@ -229,11 +229,11 @@ The `NODERED_BASE_URL` can have an additional region information say `eu-gb` for
 
 ## 7. Sign up for Watson Studio
 
-Sign up for IBM's [Watson Studio](http://dataplatform.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. 
+Sign up for IBM's [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. 
 
 ## 8. Create the notebook
 
-* Open [IBM Watson Studio](https://dataplatform.ibm.com).
+* Open [IBM Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio).
 * Click on `Create notebook` to create a notebook.
 * Select the `From URL` tab.
 * Enter a name for the notebook.
