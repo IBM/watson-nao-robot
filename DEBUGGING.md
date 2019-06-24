@@ -21,6 +21,6 @@ Node-RED
 * Refer to sections 5 & 6 in the documentation regarding the usage of Node-RED flow. Please make sure to update the Node-RED based URL in the json file before importing it into the Node-RED editor.
 
 Watson Assistant
---------
+----------------
 
 * Make sure that the Watson Assistant service credentials which had been noted down in step 2 and and Workspace ID which had been noted down in step 3, has been updated in the Watson Assistant node in Node Red Flow according to step 5.
