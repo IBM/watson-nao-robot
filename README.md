@@ -212,10 +212,10 @@ In this conversation, the slots feature under dialog has been used to gather mul
 #### Deploy the Node-RED flows by clicking on the `Deploy` button
 
 > *First flow*
-> ![](doc/source/images/first_flow.png)
+> ![](doc/source/images/first_flow.PNG)
 
 > *Second flow*
-> ![](doc/source/images/second_flow.png)
+> ![](doc/source/images/second_flow.PNG)
 
 ### 6. Note the websocket URL
 
@@ -284,7 +284,7 @@ Launchh the notebook and select the cell below `2. Read the Data & convert it in
 
 Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one created earlier. Select `Insert to code` (below your file name). Click `Insert pandas DataFrame` from drop down menu.
 
-![data frame](doc/source/images/insert_dataframe.png)
+![data frame](doc/source/images/insert_dataframe.PNG)
 
 #### Update the websocket URL in the notebook
 
@@ -316,7 +316,7 @@ Let's see a few sample responses:
 >
 > **NAO**: The highest profit of Capri Italy in 2007 is 120,000.
 
-![output](doc/source/images/results.png)
+![output](doc/source/images/results.PNG)
 
 ### 13. Update the NAO Robot Choregraphe Behaviour with service credentials and Node-RED URL
 
